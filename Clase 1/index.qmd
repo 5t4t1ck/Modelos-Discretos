@@ -1,0 +1,194 @@
+---
+title: "Unidad 1: Proposicional y Funcional"
+subtitle: "Introducción a la Lógica"
+date: "today"
+author: "Lic. Diego Medardo Saavedra García Mg. Sc."
+lang: "es"
+format:
+  revealjs:
+    #chalkboard: 
+      #buttons: false
+    toc: true
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    logo: img/logo.png
+    footer: <https://espe.edu.ec>
+    theme: dark
+    makeindex: true
+    multiplex: true
+    transition: fade
+    chalkboard: true #Pizarra
+    auto-stretch: false
+    smaller: false
+    scrollable: true
+    #presentation-title-slide-text-alig: left
+    presentation-slide-text-align: center
+    menu: true
+    codeBlock: {data-trim: true}
+    execute: true
+    executeCode: true
+  #html: 
+    
+    #code-fold: true
+    #html-math-method: katex
+    #multiplex: true
+    #transition: fade
+    #auto-stretch: false
+bibliography: Bibliografia.bib
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl"
+editor_options: 
+  chunk_output_type: console
+---
+
+# 1. Proposicional y Funcional
+
+## 1.1. Introducción a la Lógica.
+::: {justify="center"}
+
+![](https://i.ytimg.com/vi/bjwcjWb4b50/hqdefault.jpg) 
+
+En la lógica proposicional, una proposición es una afirmación que puede ser verdadera o falsa.
+
+:::
+## **Una Proposición Simple** 
+
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fney.one%2Fwp-content%2Fuploads%2F2021%2F04%2Fejemplos-proposicion.png&f=1&nofb=1&ipt=c3d09a536adab5e703bc039e1796f6ed064a63ff1bc8d4f79a62dc0b728e3e7b&ipo=images)
+
+Es una afirmación que no se puede descomponer en otras proposiciones más simples. 
+
+Por ejemplo:
+
+**"El cielo es azul" es una proposición simple.**
+
+## **Una Proposición Compuesta**.
+![](https://cdn.memegenerator.es/imagenes/memes/full/32/33/32335610.jpg)
+
+Es una afirmación que se construye a partir de dos o más proposiciones simples. Las proposiciones compuestas se pueden formar mediante el uso de conectivos lógicos. 
+
+Ejemplo
+
+"Si hace sol (p) y no hay nubes (q), entonces iré a la playa".
+
+En este ejemplo, las proposiciones simples son "hace sol" y "no hay nubes", que se unen con el conector lógico "y". La proposición compuesta indica que ambas proposiciones simples deben ser verdaderas para que se cumpla la afirmación de ir a la playa. En otras palabras, si hace sol pero hay nubes, o si no hay nubes pero está lloviendo, la proposición compuesta sería falsa y no se cumpliría la afirmación de ir a la playa.
+
+## **Conectivos Lógiocos**
+
+Los conectivos lógicos son palabras o símbolos que se utilizan para combinar proposiciones simples en proposiciones compuestas. 
+
+Los conectivos lógicos básicos son:
+
+- **Negación** (¬): Se usa para negar una proposición. Por ejemplo, si p es "El cielo es azul", entonces ¬p es "El cielo no es azul".
+
+- **Conjunción** (∧): Se usa para combinar dos proposiciones con la idea de que ambas deben ser verdaderas para que la proposición compuesta sea verdadera. Por ejemplo, si p es "Juan es alto" y q es "Ana es baja", entonces p ∧ q es "Juan es alto y Ana es baja".
+    
+- **Disyunción** (∨): Se usa para combinar dos proposiciones con la idea de que al menos una de ellas debe ser verdadera para que la proposición compuesta sea verdadera. Por ejemplo, si p es "El perro es marrón" y q es "El gato es negro", entonces p ∨ q es "El perro es marrón o el gato es negro".
+
+- **Implicación** (→): Se usa para establecer una relación de condicionalidad entre dos proposiciones, de modo que si la primera proposición es verdadera, entonces la segunda también lo es. Por ejemplo, si p es "Si llueve, me quedo en casa" y q es "Llueve", entonces p → q es "Si llueve, me quedo en casa".
+
+A continuación, te daré un ejemplo para cada uno de los conectivos lógicos:
+
+- **Negación:** Si p es "Juan es alto", entonces ¬p es "Juan no es alto".
+
+- **Conjunción:** Si p es "Juan es alto" y q es "Ana es baja", entonces p ∧ q es "Juan es alto y Ana es baja".
+    
+- **Disyunción:** Si p es "El perro es marrón" y q es "El gato es negro", entonces p ∨ q es "El perro es marrón o el gato es negro".
+    
+- **Implicación:** Si p es "Si llueve, me quedo en casa" y q es "Llueve", entonces p → q es "Si llueve, me quedo en casa". Si q fuera falsa, la implicación también lo sería.
+
+## Tablas de Verdad:
+
+Un concepto básico en la lógica matemática es el uso de tablas de verdad para analizar la validez de proposiciones y argumentos lógicos. 
+
+**Una tabla de verdad es una tabla que muestra todos los posibles valores de verdad para una proposición o combinación de proposiciones**.
+
+Por ejemplo, 
+
+Si tenemos la proposición "p v q", donde "p" es la afirmación "el cielo es azul" y "q" es la afirmación "el pasto es verde", podemos construir una tabla de verdad para mostrar todos los posibles valores de verdad para esta proposición:
+
+| p | q | p v q |
+|---|---|-------|
+| V | V | V     |
+| V | F | V     |
+| F | V | V     |
+| F | F | F     | 
+
+En esta tabla, "V" representa verdadero y "F" representa falso. La columna "p v q" muestra los valores de verdad para la proposición "p v q", que es verdadera si al menos una de las proposiciones "p" o "q" es verdadera.
+
+Las tablas de verdad son útiles para determinar la validez de proposiciones y argumentos lógicos, ya que permiten analizar todas las posibles combinaciones de valores de verdad para una proposición o argumento. Por ejemplo, si queremos determinar la validez del argumento "p -> q, q -> r, por lo tanto p -> r", podemos construir una tabla de verdad para mostrar que este argumento es válido en todos los casos posibles:
+
+| p | q | r | p -> q | q -> r | p -> r |
+|---|---|---|--------|--------|--------|
+| V | V | V | V      | V      | V      |
+| V | V | F | V      | F      | F      |
+| V | F | V | F      | V      | V      |
+| V | F | F | F      | V      | F      |
+| F | V | V | V      | V      | V      |
+| F | V | F | V      | F      | V      |
+| F | F | V | V      | V      | V      |
+| F | F | F | V      | V      | V      |
+
+En resumen, las tablas de verdad son una herramienta esencial en la lógica matemática, ya que permiten analizar la validez de proposiciones y argumentos lógicos mediante la consideración de todos los posibles valores de verdad.
+
+## Ejemplo 1: Tabla de verdad para la conjunción (AND)
+
+La conjunción, representada por el símbolo ∧, es un conectivo lógico que se utiliza para combinar dos proposiciones y sólo es verdadera si ambas proposiciones son verdaderas. La tabla de verdad para la conjunción se ve así:
+
+| P | Q | P ∧ Q |
+|---|---|-------|
+| V | V | V     |
+| V | F | F     |
+| F | V | F     |
+| F | F | F     |
+
+En esta tabla de verdad, P y Q son proposiciones simples que pueden ser verdaderas (V) o falsas (F). La columna final, P ∧ Q, representa la proposición compuesta que se forma al unir P y Q con el operador ∧.
+
+La tabla muestra todas las posibles combinaciones de valores de verdad para P y Q, y el resultado de la conjunción. Por ejemplo, cuando P es verdadera (V) y Q es verdadera (V), la conjunción es verdadera (V), mientras que cuando P es verdadera (V) y Q es falsa (F), la conjunción es falsa (F).
+
+## Ejemplo 2: Tabla de verdad para la disyunción (OR)
+
+La disyunción, representada por el símbolo ∨, es otro conectivo lógico que se utiliza para combinar dos proposiciones y es verdadera si al menos una de las proposiciones es verdadera. La tabla de verdad para la disyunción se ve así:
+
+| P | Q | P ∨ Q |
+|---|---|-------|
+| V | V | V     |
+| V | F | V     |
+| F | V | V     |
+| F | F | F     |
+
+En esta tabla de verdad, P y Q son proposiciones simples que pueden ser verdaderas (V) o falsas (F). La columna final, P ∨ Q, representa la proposición compuesta que se forma al unir P y Q con el operador ∨.
+
+La tabla muestra todas las posibles combinaciones de valores de verdad para P y Q, y el resultado de la disyunción. Por ejemplo, cuando P es verdadera (V) y Q es verdadera (V), la disyunción es verdadera (V), mientras que cuando P es verdadera (V) y Q es falsa (F), la disyunción también es verdadera (V) porque al menos una de las proposiciones es verdadera.
+
+## Ejemplo 3: Tabla de verdad para la negación (NOT)
+
+La negación, representada por el símbolo ¬, es un operador unario que se utiliza para invertir el valor de verdad de una proposición. La tabla de verdad para la negación se ve así:
+
+| P | ¬P |
+|---|----|
+| V | F  |
+| F | V  |
+
+En esta tabla de verdad, P es una proposición simple que puede ser verdadera (V) o falsa (F). La columna final, ¬P, representa la negación de P.
+
+La tabla muestra todas las posibles combinaciones de valores de verdad para P y el resultado de la negación. Por ejemplo, cuando P es verdadera (V), la negación de
+
+<!-- ## 1.1.1. Proposiciones condicionales y bicondicionales.
+### 1.1.2. Equivalencia lógica: Leyes de la lógica propocional
+### 1.1.3. Implicación lógica: Reglas de inferencia para proposiciones
+## 1.2. Mètodos de demostración.
+### 1.2.1. Cuantificadores existencial y universal.
+### 1.2.2. Validez y sistemas de prueba en predicados.
+## 1.3. Teoría y Relaciones de Conjuntos.
+### 1.3.1. Operadores relacioneales: selección, protección y unión.
+### 1.3.2. Relaciones entre conjuntos.
+## 1.4. Representación del Conocimiento.
+### Lógica de Predicados del Primer Orden (LPPO).-->
+
+# Bibliografía 
+
+Johnsonbaugh, R. (2005). Matemáticas Discretas. México: Pearson.
+
+Kolman, B. (1986). Estructura de matemáticas discretos para la computación. México, D.F.: Prentice-Hall.
+
+Veerarajan, T. (2008). Matemáticas discretas con teoría de gráficas y combinatoria. McGraw Hill Interamericana.
