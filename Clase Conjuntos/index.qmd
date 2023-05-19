@@ -1,0 +1,188 @@
+---
+title: "Unidad 1: Proposicional y Funcional"
+subtitle: "Conjuntos"
+date: "today"
+author: "Lic. Diego Medardo Saavedra García Mg. Sc."
+lang: "es"
+format:
+  revealjs:
+    #chalkboard: 
+      #buttons: false
+    toc: true
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    logo: img/logo.png
+    footer: <https://espe.edu.ec>
+    theme: dark
+    makeindex: true
+    multiplex: true
+    transition: fade
+    chalkboard: true #Pizarra
+    auto-stretch: false
+    smaller: false
+    scrollable: true
+    #presentation-title-slide-text-alig: left
+    presentation-slide-text-align: center
+    menu: true
+    codeBlock: {data-trim: true}
+    execute: true
+    executeCode: true
+  #html: 
+    
+    #code-fold: true
+    #html-math-method: katex
+    #multiplex: true
+    #transition: fade
+    #auto-stretch: false
+bibliography: Bibliografia.bib
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl"
+editor_options: 
+  chunk_output_type: console
+---
+
+# 1. Conjuntos
+
+## Introducción:
+
+- Los conjuntos son una parte fundamental en Modelos Discretos para Ingeniería de Software.
+- Nos permiten agrupar elementos y realizar operaciones sobre ellos.
+- En esta presentación, exploraremos diferentes conceptos y operaciones relacionadas con los conjuntos.
+
+## Determinación de Conjuntos
+
+### Enumeración:
+
+- Método de determinación de conjuntos mediante la enumeración de sus elementos.
+    
+Ejemplo: 
+
+A = {1, 2, 3, 4}
+
+### Comprensión:
+
+- Método de determinación de conjuntos mediante la descripción de una condición o propiedad.
+
+Ejemplo: 
+
+B = {x | x es un número entero y x es divisible por 2}
+
+## Relación Entre Conjuntos
+
+### Igualdad:
+
+- Dos conjuntos son iguales si tienen exactamente los mismos elementos.
+
+Ejemplo: A = {1, 2, 3} y B = {3, 2, 1}
+
+### Equivalencia:
+
+- Dos conjuntos son equivalentes si tienen la misma cantidad de elementos.
+
+Ejemplo: 
+
+C = {a, b, c} y D = {1, 2, 3}
+
+### Inclusión:
+
+- Un conjunto A está incluido en un conjunto B si todos los elementos de A también están en B.
+
+Ejemplo: 
+
+E = {1, 2} y F = {1, 2, 3}
+
+## Clasificación de Conjuntos
+
+### Unitario:
+
+- Un conjunto unitario contiene un solo elemento.
+
+Ejemplo: 
+
+G = {5}
+
+### Finito:
+
+- Un conjunto finito tiene una cantidad finita de elementos.
+
+Ejemplo: H = {a, b, c}
+
+### Infinito:
+
+- Un conjunto infinito tiene una cantidad infinita de elementos.
+
+Ejemplo: 
+
+I = {1, 2, 3, ...}
+
+## Por las Relaciones entre Si
+
+### Universo:
+
+- El universo es el conjunto que contiene todos los elementos relevantes en un contexto particular.
+
+### Contables:
+
+- Un conjunto es contable si sus elementos se pueden enumerar o contar.
+
+### Conjunto Potencia:
+
+- El conjunto potencia de un conjunto es el conjunto que contiene todos los subconjuntos posibles del conjunto original.
+
+### Diagramas de Venn-Euler:
+
+- Diagramas gráficos que ayudan a visualizar las relaciones entre conjuntos mediante círculos o regiones superpuestas.
+
+## Operaciones de Conjuntos
+
+### Unión:
+
+- La unión de dos conjuntos crea un nuevo conjunto con todos los elementos de ambos conjuntos.
+
+### Intersección:
+
+- La intersección de dos conjuntos crea un nuevo conjunto con los elementos comunes a ambos conjuntos.
+
+### Suma Booleana:
+
+- La suma booleana de dos conjuntos es similar a la unión, pero sin duplicación de elementos comunes.
+
+### Diferencia:
+
+- La diferencia entre dos conjuntos crea un nuevo conjunto con los elementos de uno que no están en el otro.
+
+### Complemento:
+
+- El complemento de un conjunto es el conjunto de elementos que no pertenecen al conjunto original.
+
+## Leyes de Conjuntos
+
+- Las leyes de conjuntos establecen reglas y propiedades relacionadas con las operaciones de conjuntos.
+
+- Estas leyes permiten simplificar y demostrar proposiciones lógicas relacionadas con conjuntos.
+
+- Algunas leyes comunes incluyen la ley de identidad, la ley de dominio y la ley de complemento.
+
+- Las leyes de conjuntos se aplican en diferentes operaciones de conjuntos y son fundamentales para el análisis y la manipulación de conjuntos en Modelos Discretos para Ingeniería de Software.
+
+## Conclusiones
+
+- Los conjuntos son elementos esenciales en Modelos Discretos para Ingeniería de Software.
+
+- Su determinación, relación y clasificación nos permiten agrupar y manipular elementos de manera efectiva.
+
+- Las operaciones de conjuntos, como la unión, intersección y diferencia, nos permiten realizar cálculos y análisis sobre conjuntos.
+
+- Las leyes de conjuntos proporcionan reglas lógicas para simplificar y demostrar proposiciones relacionadas con conjuntos.
+
+## Referencias
+
+Rosen, K. H. (2019). Discrete Mathematics and Its Applications. McGraw-Hill Education.
+Tremblay, J. P., & Manohar, R. (2010). Discrete Mathematical Structures with Applications to Computer Science. Tata McGraw-Hill Education.
+Epp, S. S. (2010). Discrete Mathematics with Applications. Cengage Learning.
+Johnsonbaugh, R. (2017). Discrete Mathematics. Pearson.
+Grimaldi, R. P. (2017). Discrete and Combinatorial Mathematics: An Applied Introduction. Pearson.
+
+## ¡Gracias!
+
+"Muchas Gracias por su atención"
