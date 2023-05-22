@@ -1,19 +1,19 @@
 ---
-title: "Unidad 1: Proposicional y Funcional"
-subtitle: "Conjuntos"
+title: "Desarrollo de Pensamiento Computacional en niños con recursos limitados"
+#subtitle: ""
 date: "today"
-author: "Lic. Diego Medardo Saavedra García Mg. Sc."
+author: "Lcdo. Diego Medardo Saavedra García Mgtr."
 lang: "es"
 format:
   revealjs:
     #chalkboard: 
       #buttons: false
-    toc: true
+    #toc: true
     incremental: false
     slide-number: true
     preview-links: auto
-    logo: img/logo.png
-    footer: <https://espe.edu.ec>
+    logo: http://intranet.williamaustin-jun.luton.sch.uk/images/scratch.gif
+    footer: <https://tinyurl.com/bdhndphf>
     theme: dark
     makeindex: true
     multiplex: true
@@ -41,148 +41,70 @@ editor_options:
   chunk_output_type: console
 ---
 
-# 1. Conjuntos
+# Scratch Day Quito 2023
 
-## Introducción:
+![](images/yev5rxnc-400.png){fig-align="center"}
 
-- Los conjuntos son una parte fundamental en Modelos Discretos para Ingeniería de Software.
-- Nos permiten agrupar elementos y realizar operaciones sobre ellos.
-- En esta presentación, exploraremos diferentes conceptos y operaciones relacionadas con los conjuntos.
+## ¿Qué es el Pensamiento Computacional?
 
-## Determinación de Conjuntos
+El Pensamiento Computacional es una habilidad fundamental en la era digital que permite a las personas resolver problemas de manera lógica y creativa, utilizando conceptos y métodos utilizados en la informática.
 
-### Enumeración:
+## Importancia del Pensamiento Computacional.
 
-- Método de determinación de conjuntos mediante la enumeración de sus elementos.
-    
-Ejemplo: 
+El Pensamiento Computacional fomenta habilidades como el razonamiento lógico, la resolución de problemas, la creatividad, el trabajo en equipo y la toma de decisiones informadas. Estas habilidades son cada vez más relevantes en diversos campos profesionales y en la vida cotidiana.
 
-A = {1, 2, 3, 4}
+## Beneficios del Pensamiento Computacional para niños y jóvenes.
 
-### Comprensión:
+Desarrollar el Pensamiento Computacional en niños y jóvenes les permite adquirir habilidades transferibles a otras áreas de estudio y desarrollar un enfoque sistemático y estructurado para enfrentar desafíos.
 
-- Método de determinación de conjuntos mediante la descripción de una condición o propiedad.
+# ¿Qué herramientas se puede utilizar?.
 
-Ejemplo: 
+## Scratch
 
-B = {x | x es un número entero y x es divisible por 2}
+![](http://intranet.williamaustin-jun.luton.sch.uk/images/scratch.gif)
 
-## Relación Entre Conjuntos
+Scratch es un lenguaje de programación visual diseñado para niños y jóvenes. Permite crear historias interactivas, juegos y animaciones, fomentando la creatividad y el razonamiento lógico.
 
-### Igualdad:
+## Scratch Jr
 
-- Dos conjuntos son iguales si tienen exactamente los mismos elementos.
+{{< video https://www.youtube.com/watch?v=nMJTsthJ3PE width="400" height="300" >}}
 
-Ejemplo: A = {1, 2, 3} y B = {3, 2, 1}
+Scratch Jr es una versión simplificada de Scratch diseñada específicamente para niños más pequeños (de 5 a 7 años). Permite a los niños crear animaciones y juegos interactivos mediante bloques de programación visualmente intuitivos.
 
-### Equivalencia:
+## Code.org
 
-- Dos conjuntos son equivalentes si tienen la misma cantidad de elementos.
+![](https://media1.tenor.com/images/ec26ef4a59daa8c4656b084dc06f2f44/tenor.gif)
 
-Ejemplo: 
+Es una plataforma en línea que ofrece cursos de programación gratuitos para niños y jóvenes. Proporciona lecciones interactivas y desafiantes, promoviendo el aprendizaje del Pensamiento Computacional.
 
-C = {a, b, c} y D = {1, 2, 3}
+## LEGO Mindstorms
 
-### Inclusión:
+![](https://www.brickshelf.com/gallery/CHOOPS/MOVIES/gearbox-2.gif)
 
-- Un conjunto A está incluido en un conjunto B si todos los elementos de A también están en B.
+LEGO Mindstorms es una serie de kits de robótica educativa que permiten a los niños construir y programar robots. Proporciona una experiencia práctica para aprender Pensamiento Computacional y fomenta la resolución de problemas.
 
-Ejemplo: 
+## App Inventor
 
-E = {1, 2} y F = {1, 2, 3}
+![](https://s3.amazonaws.com/media-p.slid.es/uploads/290863/images/8417903/16.gif)
 
-## Clasificación de Conjuntos
+App Inventor es una herramienta que permite a los niños y jóvenes crear sus propias aplicaciones móviles de manera sencilla y visual. Ayuda a desarrollar habilidades de diseño, programación y resolución de problemas.
 
-### Unitario:
+## Pictoblox
 
-- Un conjunto unitario contiene un solo elemento.
+{{< video https://www.youtube.com/watch?v=9y4vhkCl-Yw width="400" height="300" >}}
 
-Ejemplo: 
+Pictoblox es una herramienta de programación gráfica basada en Scratch, diseñada específicamente para trabajar con placas de desarrollo como Arduino. Permite a niños y jóvenes aprender programación y electrónica de manera divertida y práctica.
 
-G = {5}
+## Conclusión.
 
-### Finito:
+El Pensamiento Computacional es una habilidad esencial en el mundo actual. Las herramientas mencionadas son solo algunas de las muchas disponibles para ayudar a los niños y jóvenes a desarrollar esta capacidad y prepararse para el futuro digital.
 
-- Un conjunto finito tiene una cantidad finita de elementos.
+## Muchas Gracias.
 
-Ejemplo: H = {a, b, c}
+![](https://pbs.twimg.com/profile_images/1630705417440428032/34cc-Aca_400x400.jpg)
 
-### Infinito:
+Lic. Diego Medardo Saavedra García Mgtr.
 
-- Un conjunto infinito tiene una cantidad infinita de elementos.
+**Universidad de las Fuerzas Armadas ESPE**
 
-Ejemplo: 
-
-I = {1, 2, 3, ...}
-
-## Por las Relaciones entre Si
-
-### Universo:
-
-- El universo es el conjunto que contiene todos los elementos relevantes en un contexto particular.
-
-### Contables:
-
-- Un conjunto es contable si sus elementos se pueden enumerar o contar.
-
-### Conjunto Potencia:
-
-- El conjunto potencia de un conjunto es el conjunto que contiene todos los subconjuntos posibles del conjunto original.
-
-### Diagramas de Venn-Euler:
-
-- Diagramas gráficos que ayudan a visualizar las relaciones entre conjuntos mediante círculos o regiones superpuestas.
-
-## Operaciones de Conjuntos
-
-### Unión:
-
-- La unión de dos conjuntos crea un nuevo conjunto con todos los elementos de ambos conjuntos.
-
-### Intersección:
-
-- La intersección de dos conjuntos crea un nuevo conjunto con los elementos comunes a ambos conjuntos.
-
-### Suma Booleana:
-
-- La suma booleana de dos conjuntos es similar a la unión, pero sin duplicación de elementos comunes.
-
-### Diferencia:
-
-- La diferencia entre dos conjuntos crea un nuevo conjunto con los elementos de uno que no están en el otro.
-
-### Complemento:
-
-- El complemento de un conjunto es el conjunto de elementos que no pertenecen al conjunto original.
-
-## Leyes de Conjuntos
-
-- Las leyes de conjuntos establecen reglas y propiedades relacionadas con las operaciones de conjuntos.
-
-- Estas leyes permiten simplificar y demostrar proposiciones lógicas relacionadas con conjuntos.
-
-- Algunas leyes comunes incluyen la ley de identidad, la ley de dominio y la ley de complemento.
-
-- Las leyes de conjuntos se aplican en diferentes operaciones de conjuntos y son fundamentales para el análisis y la manipulación de conjuntos en Modelos Discretos para Ingeniería de Software.
-
-## Conclusiones
-
-- Los conjuntos son elementos esenciales en Modelos Discretos para Ingeniería de Software.
-
-- Su determinación, relación y clasificación nos permiten agrupar y manipular elementos de manera efectiva.
-
-- Las operaciones de conjuntos, como la unión, intersección y diferencia, nos permiten realizar cálculos y análisis sobre conjuntos.
-
-- Las leyes de conjuntos proporcionan reglas lógicas para simplificar y demostrar proposiciones relacionadas con conjuntos.
-
-## Referencias
-
-Rosen, K. H. (2019). Discrete Mathematics and Its Applications. McGraw-Hill Education.
-Tremblay, J. P., & Manohar, R. (2010). Discrete Mathematical Structures with Applications to Computer Science. Tata McGraw-Hill Education.
-Epp, S. S. (2010). Discrete Mathematics with Applications. Cengage Learning.
-Johnsonbaugh, R. (2017). Discrete Mathematics. Pearson.
-Grimaldi, R. P. (2017). Discrete and Combinatorial Mathematics: An Applied Introduction. Pearson.
-
-## ¡Gracias!
-
-"Muchas Gracias por su atención"
+**Departamento de Ciencias de la Computación**
