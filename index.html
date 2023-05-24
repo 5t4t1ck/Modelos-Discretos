@@ -8,11 +8,11 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.290">
+  <meta name="generator" content="quarto-1.3.340">
 
   <meta name="author" content="Lic. Diego Medardo Saavedra García Mg. Sc.">
-  <meta name="dcterms.date" content="2023-05-04">
-  <title>Unidad 1: Proposicional y Funcional</title>
+  <meta name="dcterms.date" content="2023-05-24">
+  <title>Ejercicios de Conjuntos</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,6 +30,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -329,8 +394,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Unidad 1: Proposicional y Funcional</h1>
-  <p class="subtitle">Introducción a la Lógica</p>
+  <h1 class="title">Ejercicios de Conjuntos</h1>
+  <p class="subtitle">Modelos Discretos</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -340,309 +405,192 @@ Lic. Diego Medardo Saavedra García Mg. Sc.
 </div>
 </div>
 
-  <p class="date">2023-05-04</p>
+  <p class="date">2023-05-24</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Tabla de contenidos</h2>
 <ul>
-<li><a href="#/proposicional-y-funcional" id="/toc-proposicional-y-funcional">1. Proposicional y Funcional</a>
+<li><a href="#/ejercicios-de-conjuntos" id="/toc-ejercicios-de-conjuntos">Ejercicios de Conjuntos</a>
 <ul>
-<li><a href="#/introducción-a-la-lógica." id="/toc-introducción-a-la-lógica.">1.1. Introducción a la Lógica.</a></li>
-<li><a href="#/una-proposición-simple" id="/toc-una-proposición-simple"><strong>Una Proposición Simple</strong></a></li>
-<li><a href="#/una-proposición-compuesta." id="/toc-una-proposición-compuesta."><strong>Una Proposición Compuesta</strong>.</a></li>
-<li><a href="#/conectivos-lógiocos" id="/toc-conectivos-lógiocos"><strong>Conectivos Lógiocos</strong></a></li>
-<li><a href="#/tablas-de-verdad" id="/toc-tablas-de-verdad">Tablas de Verdad:</a></li>
-<li><a href="#/ejemplo-1-tabla-de-verdad-para-la-conjunción-and" id="/toc-ejemplo-1-tabla-de-verdad-para-la-conjunción-and">Ejemplo 1: Tabla de verdad para la conjunción (AND)</a></li>
-<li><a href="#/ejemplo-2-tabla-de-verdad-para-la-disyunción-or" id="/toc-ejemplo-2-tabla-de-verdad-para-la-disyunción-or">Ejemplo 2: Tabla de verdad para la disyunción (OR)</a></li>
-<li><a href="#/ejemplo-3-tabla-de-verdad-para-la-negación-not" id="/toc-ejemplo-3-tabla-de-verdad-para-la-negación-not">Ejemplo 3: Tabla de verdad para la negación (NOT)</a></li>
+<li><a href="#/ejercicio-1-verificar-si-un-elemento-pertenece-a-un-conjunto." id="/toc-ejercicio-1-verificar-si-un-elemento-pertenece-a-un-conjunto.">Ejercicio 1: Verificar si un elemento pertenece a un conjunto.</a></li>
+<li><a href="#/ejercicio-2-calcular-la-intersección-de-dos-conjuntos." id="/toc-ejercicio-2-calcular-la-intersección-de-dos-conjuntos.">Ejercicio 2: Calcular la intersección de dos conjuntos.</a></li>
+<li><a href="#/ejercicio-3-calcular-la-unión-de-dos-conjuntos." id="/toc-ejercicio-3-calcular-la-unión-de-dos-conjuntos.">Ejercicio 3: Calcular la unión de dos conjuntos.</a></li>
+<li><a href="#/ejercicio-4-verificar-si-un-conjunto-es-subconjunto-de-otro." id="/toc-ejercicio-4-verificar-si-un-conjunto-es-subconjunto-de-otro.">Ejercicio 4: Verificar si un conjunto es subconjunto de otro.</a></li>
+<li><a href="#/ejercicio-5-calcular-la-diferencia-entre-dos-conjuntos." id="/toc-ejercicio-5-calcular-la-diferencia-entre-dos-conjuntos.">Ejercicio 5: Calcular la diferencia entre dos conjuntos.</a></li>
+<li><a href="#/ejercicio-6-calcular-el-complemento-de-un-conjunto-en-relación-con-un-universo." id="/toc-ejercicio-6-calcular-el-complemento-de-un-conjunto-en-relación-con-un-universo.">Ejercicio 6: Calcular el complemento de un conjunto en relación con un universo.</a></li>
+<li><a href="#/ejercicio-7-verificar-si-dos-conjuntos-son-disjuntos-no-tienen-elementos-en-común." id="/toc-ejercicio-7-verificar-si-dos-conjuntos-son-disjuntos-no-tienen-elementos-en-común.">Ejercicio 7: Verificar si dos conjuntos son disjuntos (no tienen elementos en común).</a></li>
+<li><a href="#/ejercicio-8-calcular-la-suma-booleana-de-dos-conjuntos." id="/toc-ejercicio-8-calcular-la-suma-booleana-de-dos-conjuntos.">Ejercicio 8: Calcular la suma booleana de dos conjuntos.</a></li>
+<li><a href="#/ejercicio-9-calcular-el-conjunto-potencia-de-un-conjunto." id="/toc-ejercicio-9-calcular-el-conjunto-potencia-de-un-conjunto.">Ejercicio 9: Calcular el conjunto potencia de un conjunto.</a></li>
+<li><a href="#/ejercicio-10-calcular-el-número-de-elementos-en-un-conjunto." id="/toc-ejercicio-10-calcular-el-número-de-elementos-en-un-conjunto.">Ejercicio 10: Calcular el número de elementos en un conjunto.</a></li>
+<li><a href="#/tarea---conjuntos" id="/toc-tarea---conjuntos">Tarea - Conjuntos:</a></li>
 </ul></li>
-<li><a href="#/bibliografía" id="/toc-bibliografía">Bibliografía</a></li>
 </ul>
 </nav>
 </section>
 <section>
-<section id="proposicional-y-funcional" class="title-slide slide level1 center">
-<h1>1. Proposicional y Funcional</h1>
+<section id="ejercicios-de-conjuntos" class="title-slide slide level1 center">
+<h1>Ejercicios de Conjuntos</h1>
 
 </section>
-<section id="introducción-a-la-lógica." class="slide level2">
-<h2>1.1. Introducción a la Lógica.</h2>
-<div data-justify="center">
-<p><img data-src="https://i.ytimg.com/vi/bjwcjWb4b50/hqdefault.jpg" class="quarto-discovered-preview-image"></p>
-<p>En la lógica proposicional, una proposición es una afirmación que puede ser verdadera o falsa.</p>
+<section id="ejercicio-1-verificar-si-un-elemento-pertenece-a-un-conjunto." class="slide level2">
+<h2>Ejercicio 1: Verificar si un elemento pertenece a un conjunto.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Ejercicio 1</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>conjunto <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>}</span>
+<span id="cb1-3"><a href="#cb1-3"></a>elemento <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="cf">if</span> elemento <span class="kw">in</span> conjunto:</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    <span class="bu">print</span>(<span class="ss">f"El elemento </span><span class="sc">{</span>elemento<span class="sc">}</span><span class="ss"> pertenece al conjunto."</span>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="cf">else</span>:</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    <span class="bu">print</span>(<span class="ss">f"El elemento </span><span class="sc">{</span>elemento<span class="sc">}</span><span class="ss"> no pertenece al conjunto."</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><strong>Explicación:</strong> En este ejercicio, verificamos si el elemento 3 pertenece al conjunto dado. Utilizamos el operador in para verificar la pertenencia y mostramos el resultado en la salida.</p>
 </section>
-<section id="una-proposición-simple" class="slide level2">
-<h2><strong>Una Proposición Simple</strong></h2>
-<p><img data-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fney.one%2Fwp-content%2Fuploads%2F2021%2F04%2Fejemplos-proposicion.png&amp;f=1&amp;nofb=1&amp;ipt=c3d09a536adab5e703bc039e1796f6ed064a63ff1bc8d4f79a62dc0b728e3e7b&amp;ipo=images"></p>
-<p>Es una afirmación que no se puede descomponer en otras proposiciones más simples.</p>
-<p>Por ejemplo:</p>
-<p><strong>“El cielo es azul” es una proposición simple.</strong></p>
+<section id="ejercicio-2-calcular-la-intersección-de-dos-conjuntos." class="slide level2">
+<h2>Ejercicio 2: Calcular la intersección de dos conjuntos.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Ejercicio 2</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</span>
+<span id="cb2-4"><a href="#cb2-4"></a>conjunto2 <span class="op">=</span> {<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>}</span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a>interseccion <span class="op">=</span> conjunto1.intersection(conjunto2)</span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="bu">print</span>(<span class="st">"La intersección de los conjuntos es:"</span>, interseccion)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método intersection() para calcular la intersección de los conjuntos conjunto1 y conjunto2. Luego, mostramos el resultado en la salida.</p>
 </section>
-<section id="una-proposición-compuesta." class="slide level2">
-<h2><strong>Una Proposición Compuesta</strong>.</h2>
-<p><img data-src="https://cdn.memegenerator.es/imagenes/memes/full/32/33/32335610.jpg"></p>
-<p>Es una afirmación que se construye a partir de dos o más proposiciones simples. Las proposiciones compuestas se pueden formar mediante el uso de conectivos lógicos.</p>
-<p>Ejemplo</p>
-<p>“Si hace sol (p) y no hay nubes (q), entonces iré a la playa”.</p>
-<p>En este ejemplo, las proposiciones simples son “hace sol” y “no hay nubes”, que se unen con el conector lógico “y”. La proposición compuesta indica que ambas proposiciones simples deben ser verdaderas para que se cumpla la afirmación de ir a la playa. En otras palabras, si hace sol pero hay nubes, o si no hay nubes pero está lloviendo, la proposición compuesta sería falsa y no se cumpliría la afirmación de ir a la playa.</p>
+<section id="ejercicio-3-calcular-la-unión-de-dos-conjuntos." class="slide level2">
+<h2>Ejercicio 3: Calcular la unión de dos conjuntos.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Ejercicio 3</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
+<span id="cb3-3"><a href="#cb3-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>}</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a>union <span class="op">=</span> conjunto1.union(conjunto2)</span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="bu">print</span>(<span class="st">"La unión de los conjuntos es:"</span>, union)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método union() para calcular la unión de los conjuntos conjunto1 y conjunto2. Mostramos el resultado en la salida.</p>
 </section>
-<section id="conectivos-lógiocos" class="slide level2">
-<h2><strong>Conectivos Lógiocos</strong></h2>
-<p>Los conectivos lógicos son palabras o símbolos que se utilizan para combinar proposiciones simples en proposiciones compuestas.</p>
-<p>Los conectivos lógicos básicos son:</p>
-<ul>
-<li><p><strong>Negación</strong> (¬): Se usa para negar una proposición. Por ejemplo, si p es “El cielo es azul”, entonces ¬p es “El cielo no es azul”.</p></li>
-<li><p><strong>Conjunción</strong> (∧): Se usa para combinar dos proposiciones con la idea de que ambas deben ser verdaderas para que la proposición compuesta sea verdadera. Por ejemplo, si p es “Juan es alto” y q es “Ana es baja”, entonces p ∧ q es “Juan es alto y Ana es baja”.</p></li>
-<li><p><strong>Disyunción</strong> (∨): Se usa para combinar dos proposiciones con la idea de que al menos una de ellas debe ser verdadera para que la proposición compuesta sea verdadera. Por ejemplo, si p es “El perro es marrón” y q es “El gato es negro”, entonces p ∨ q es “El perro es marrón o el gato es negro”.</p></li>
-<li><p><strong>Implicación</strong> (→): Se usa para establecer una relación de condicionalidad entre dos proposiciones, de modo que si la primera proposición es verdadera, entonces la segunda también lo es. Por ejemplo, si p es “Si llueve, me quedo en casa” y q es “Llueve”, entonces p → q es “Si llueve, me quedo en casa”.</p></li>
-</ul>
-<p>A continuación, te daré un ejemplo para cada uno de los conectivos lógicos:</p>
-<ul>
-<li><p><strong>Negación:</strong> Si p es “Juan es alto”, entonces ¬p es “Juan no es alto”.</p></li>
-<li><p><strong>Conjunción:</strong> Si p es “Juan es alto” y q es “Ana es baja”, entonces p ∧ q es “Juan es alto y Ana es baja”.</p></li>
-<li><p><strong>Disyunción:</strong> Si p es “El perro es marrón” y q es “El gato es negro”, entonces p ∨ q es “El perro es marrón o el gato es negro”.</p></li>
-<li><p><strong>Implicación:</strong> Si p es “Si llueve, me quedo en casa” y q es “Llueve”, entonces p → q es “Si llueve, me quedo en casa”. Si q fuera falsa, la implicación también lo sería.</p></li>
-</ul>
+<section id="ejercicio-4-verificar-si-un-conjunto-es-subconjunto-de-otro." class="slide level2">
+<h2>Ejercicio 4: Verificar si un conjunto es subconjunto de otro.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Ejercicio 4</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</span>
+<span id="cb4-3"><a href="#cb4-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
+<span id="cb4-4"><a href="#cb4-4"></a></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="cf">if</span> conjunto2.issubset(conjunto1):</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="bu">print</span>(<span class="st">"El conjunto 2 es un subconjunto del conjunto 1."</span>)</span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="cf">else</span>:</span>
+<span id="cb4-8"><a href="#cb4-8"></a>    <span class="bu">print</span>(<span class="st">"El conjunto 2 no es un subconjunto del conjunto 1."</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método issubset() para verificar si conjunto2 es un subconjunto de conjunto1. Mostramos el resultado en la salida.</p>
 </section>
-<section id="tablas-de-verdad" class="slide level2">
-<h2>Tablas de Verdad:</h2>
-<p>Un concepto básico en la lógica matemática es el uso de tablas de verdad para analizar la validez de proposiciones y argumentos lógicos.</p>
-<p><strong>Una tabla de verdad es una tabla que muestra todos los posibles valores de verdad para una proposición o combinación de proposiciones</strong>.</p>
-<p>Por ejemplo,</p>
-<p>Si tenemos la proposición “p v q”, donde “p” es la afirmación “el cielo es azul” y “q” es la afirmación “el pasto es verde”, podemos construir una tabla de verdad para mostrar todos los posibles valores de verdad para esta proposición:</p>
-<table>
-<thead>
-<tr class="header">
-<th>p</th>
-<th>q</th>
-<th>p v q</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>V</td>
-<td>V</td>
-<td>V</td>
-</tr>
-<tr class="even">
-<td>V</td>
-<td>F</td>
-<td>V</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>V</td>
-<td>V</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>F</td>
-<td>F</td>
-</tr>
-</tbody>
-</table>
-<p>En esta tabla, “V” representa verdadero y “F” representa falso. La columna “p v q” muestra los valores de verdad para la proposición “p v q”, que es verdadera si al menos una de las proposiciones “p” o “q” es verdadera.</p>
-<p>Las tablas de verdad son útiles para determinar la validez de proposiciones y argumentos lógicos, ya que permiten analizar todas las posibles combinaciones de valores de verdad para una proposición o argumento. Por ejemplo, si queremos determinar la validez del argumento “p -&gt; q, q -&gt; r, por lo tanto p -&gt; r”, podemos construir una tabla de verdad para mostrar que este argumento es válido en todos los casos posibles:</p>
-<table>
-<thead>
-<tr class="header">
-<th>p</th>
-<th>q</th>
-<th>r</th>
-<th>p -&gt; q</th>
-<th>q -&gt; r</th>
-<th>p -&gt; r</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>V</td>
-<td>V</td>
-<td>V</td>
-<td>V</td>
-<td>V</td>
-<td>V</td>
-</tr>
-<tr class="even">
-<td>V</td>
-<td>V</td>
-<td>F</td>
-<td>V</td>
-<td>F</td>
-<td>F</td>
-</tr>
-<tr class="odd">
-<td>V</td>
-<td>F</td>
-<td>V</td>
-<td>F</td>
-<td>V</td>
-<td>V</td>
-</tr>
-<tr class="even">
-<td>V</td>
-<td>F</td>
-<td>F</td>
-<td>F</td>
-<td>V</td>
-<td>F</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>V</td>
-<td>V</td>
-<td>V</td>
-<td>V</td>
-<td>V</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>V</td>
-<td>F</td>
-<td>V</td>
-<td>F</td>
-<td>V</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>F</td>
-<td>V</td>
-<td>V</td>
-<td>V</td>
-<td>V</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>F</td>
-<td>F</td>
-<td>V</td>
-<td>V</td>
-<td>V</td>
-</tr>
-</tbody>
-</table>
-<p>En resumen, las tablas de verdad son una herramienta esencial en la lógica matemática, ya que permiten analizar la validez de proposiciones y argumentos lógicos mediante la consideración de todos los posibles valores de verdad.</p>
+<section id="ejercicio-5-calcular-la-diferencia-entre-dos-conjuntos." class="slide level2">
+<h2>Ejercicio 5: Calcular la diferencia entre dos conjuntos.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Ejercicio 5</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</span>
+<span id="cb5-3"><a href="#cb5-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>}</span>
+<span id="cb5-4"><a href="#cb5-4"></a></span>
+<span id="cb5-5"><a href="#cb5-5"></a>diferencia <span class="op">=</span> conjunto1.difference(conjunto2)</span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="bu">print</span>(<span class="st">"La diferencia entre los conjuntos es:"</span>, diferencia)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método difference() para calcular la diferencia entre los conjuntos conjunto1 y conjunto2. Mostramos el resultado en la salida.</p>
 </section>
-<section id="ejemplo-1-tabla-de-verdad-para-la-conjunción-and" class="slide level2">
-<h2>Ejemplo 1: Tabla de verdad para la conjunción (AND)</h2>
-<p>La conjunción, representada por el símbolo ∧, es un conectivo lógico que se utiliza para combinar dos proposiciones y sólo es verdadera si ambas proposiciones son verdaderas. La tabla de verdad para la conjunción se ve así:</p>
-<table>
-<thead>
-<tr class="header">
-<th>P</th>
-<th>Q</th>
-<th>P ∧ Q</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>V</td>
-<td>V</td>
-<td>V</td>
-</tr>
-<tr class="even">
-<td>V</td>
-<td>F</td>
-<td>F</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>V</td>
-<td>F</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>F</td>
-<td>F</td>
-</tr>
-</tbody>
-</table>
-<p>En esta tabla de verdad, P y Q son proposiciones simples que pueden ser verdaderas (V) o falsas (F). La columna final, P ∧ Q, representa la proposición compuesta que se forma al unir P y Q con el operador ∧.</p>
-<p>La tabla muestra todas las posibles combinaciones de valores de verdad para P y Q, y el resultado de la conjunción. Por ejemplo, cuando P es verdadera (V) y Q es verdadera (V), la conjunción es verdadera (V), mientras que cuando P es verdadera (V) y Q es falsa (F), la conjunción es falsa (F).</p>
+<section id="ejercicio-6-calcular-el-complemento-de-un-conjunto-en-relación-con-un-universo." class="slide level2">
+<h2>Ejercicio 6: Calcular el complemento de un conjunto en relación con un universo.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Ejercicio 6</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>universo <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>}</span>
+<span id="cb6-3"><a href="#cb6-3"></a>conjunto <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">3</span>} </span>
+<span id="cb6-4"><a href="#cb6-4"></a>complemento <span class="op">=</span> universo.difference(conjunto)</span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="bu">print</span>(<span class="st">"El complemento del conjunto en relación con el universo es:"</span>, complemento)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método difference() para calcular el complemento del conjunto conjunto en relación con el conjunto universo. Mostramos el resultado en la salida.</p>
 </section>
-<section id="ejemplo-2-tabla-de-verdad-para-la-disyunción-or" class="slide level2">
-<h2>Ejemplo 2: Tabla de verdad para la disyunción (OR)</h2>
-<p>La disyunción, representada por el símbolo ∨, es otro conectivo lógico que se utiliza para combinar dos proposiciones y es verdadera si al menos una de las proposiciones es verdadera. La tabla de verdad para la disyunción se ve así:</p>
-<table>
-<thead>
-<tr class="header">
-<th>P</th>
-<th>Q</th>
-<th>P ∨ Q</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>V</td>
-<td>V</td>
-<td>V</td>
-</tr>
-<tr class="even">
-<td>V</td>
-<td>F</td>
-<td>V</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>V</td>
-<td>V</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>F</td>
-<td>F</td>
-</tr>
-</tbody>
-</table>
-<p>En esta tabla de verdad, P y Q son proposiciones simples que pueden ser verdaderas (V) o falsas (F). La columna final, P ∨ Q, representa la proposición compuesta que se forma al unir P y Q con el operador ∨.</p>
-<p>La tabla muestra todas las posibles combinaciones de valores de verdad para P y Q, y el resultado de la disyunción. Por ejemplo, cuando P es verdadera (V) y Q es verdadera (V), la disyunción es verdadera (V), mientras que cuando P es verdadera (V) y Q es falsa (F), la disyunción también es verdadera (V) porque al menos una de las proposiciones es verdadera.</p>
+<section id="ejercicio-7-verificar-si-dos-conjuntos-son-disjuntos-no-tienen-elementos-en-común." class="slide level2">
+<h2>Ejercicio 7: Verificar si dos conjuntos son disjuntos (no tienen elementos en común).</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Ejercicio 7</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
+<span id="cb7-3"><a href="#cb7-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>}</span>
+<span id="cb7-4"><a href="#cb7-4"></a></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="cf">if</span> conjunto1.isdisjoint(conjunto2):</span>
+<span id="cb7-6"><a href="#cb7-6"></a>    <span class="bu">print</span>(<span class="st">"Los conjuntos son disjuntos, no tienen elementos en común."</span>)</span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="cf">else</span>:</span>
+<span id="cb7-8"><a href="#cb7-8"></a>    <span class="bu">print</span>(<span class="st">"Los conjuntos tienen elementos en común."</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método isdisjoint() para verificar si los conjuntos conjunto1 y conjunto2 son disjuntos, es decir, si no tienen elementos en común. Mostramos el resultado en la salida.</p>
 </section>
-<section id="ejemplo-3-tabla-de-verdad-para-la-negación-not" class="slide level2">
-<h2>Ejemplo 3: Tabla de verdad para la negación (NOT)</h2>
-<p>La negación, representada por el símbolo ¬, es un operador unario que se utiliza para invertir el valor de verdad de una proposición. La tabla de verdad para la negación se ve así:</p>
-<table>
-<thead>
-<tr class="header">
-<th>P</th>
-<th>¬P</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>V</td>
-<td>F</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>V</td>
-</tr>
-</tbody>
-</table>
-<p>En esta tabla de verdad, P es una proposición simple que puede ser verdadera (V) o falsa (F). La columna final, ¬P, representa la negación de P.</p>
-<p>La tabla muestra todas las posibles combinaciones de valores de verdad para P y el resultado de la negación. Por ejemplo, cuando P es verdadera (V), la negación de</p>
-<!-- ## 1.1.1. Proposiciones condicionales y bicondicionales.
-### 1.1.2. Equivalencia lógica: Leyes de la lógica propocional
-### 1.1.3. Implicación lógica: Reglas de inferencia para proposiciones
-## 1.2. Mètodos de demostración.
-### 1.2.1. Cuantificadores existencial y universal.
-### 1.2.2. Validez y sistemas de prueba en predicados.
-## 1.3. Teoría y Relaciones de Conjuntos.
-### 1.3.1. Operadores relacioneales: selección, protección y unión.
-### 1.3.2. Relaciones entre conjuntos.
-## 1.4. Representación del Conocimiento.
-### Lógica de Predicados del Primer Orden (LPPO).-->
-</section></section>
-<section id="bibliografía" class="title-slide slide level1 center">
-<h1>Bibliografía</h1>
-<p>Johnsonbaugh, R. (2005). Matemáticas Discretas. México: Pearson.</p>
-<p>Kolman, B. (1986). Estructura de matemáticas discretos para la computación. México, D.F.: Prentice-Hall.</p>
-<p>Veerarajan, T. (2008). Matemáticas discretas con teoría de gráficas y combinatoria. McGraw Hill Interamericana.</p>
+<section id="ejercicio-8-calcular-la-suma-booleana-de-dos-conjuntos." class="slide level2">
+<h2>Ejercicio 8: Calcular la suma booleana de dos conjuntos.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Ejercicio 8</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
+<span id="cb8-3"><a href="#cb8-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</span>
+<span id="cb8-4"><a href="#cb8-4"></a></span>
+<span id="cb8-5"><a href="#cb8-5"></a>suma_booleana <span class="op">=</span> conjunto1.symmetric_difference(conjunto2)</span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="bu">print</span>(<span class="st">"La suma booleana de los conjuntos es:"</span>, suma_booleana)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método symmetric_difference() para calcular la suma booleana de los conjuntos conjunto1 y conjunto2. La suma booleana representa los elementos que están en uno de los conjuntos pero no en ambos. Mostramos el resultado en la salida.</p>
+</section>
+<section id="ejercicio-9-calcular-el-conjunto-potencia-de-un-conjunto." class="slide level2">
+<h2>Ejercicio 9: Calcular el conjunto potencia de un conjunto.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Ejercicio 9</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>conjunto <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a>conjunto_potencia <span class="op">=</span> <span class="bu">set</span>()</span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(conjunto)<span class="op">+</span><span class="dv">1</span>):</span>
+<span id="cb9-6"><a href="#cb9-6"></a>    <span class="cf">for</span> subset <span class="kw">in</span> itertools.combinations(conjunto, i):</span>
+<span id="cb9-7"><a href="#cb9-7"></a>        conjunto_potencia.add(subset)</span>
+<span id="cb9-8"><a href="#cb9-8"></a></span>
+<span id="cb9-9"><a href="#cb9-9"></a><span class="bu">print</span>(<span class="st">"El conjunto potencia de"</span>, conjunto, <span class="st">"es:"</span>, conjunto_potencia)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Explicación:</strong> En este ejercicio, utilizamos el módulo itertools para generar todas las combinaciones posibles de elementos del conjunto y construir el conjunto potencia. Mostramos el resultado en la salida.</p>
+</section>
+<section id="ejercicio-10-calcular-el-número-de-elementos-en-un-conjunto." class="slide level2">
+<h2>Ejercicio 10: Calcular el número de elementos en un conjunto.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># Ejercicio 10</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>conjunto <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>}</span>
+<span id="cb10-3"><a href="#cb10-3"></a></span>
+<span id="cb10-4"><a href="#cb10-4"></a>cantidad_elementos <span class="op">=</span> <span class="bu">len</span>(conjunto)</span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="bu">print</span>(<span class="st">"El conjunto tiene"</span>, cantidad_elementos, <span class="st">"elementos."</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Explicación:</strong> En este ejercicio, utilizamos la función len() para calcular el número de elementos en el conjunto y lo mostramos en la salida.</p>
+<p>Recuerda importar el módulo itertools en caso de utilizar el ejercicio 9.</p>
+</section>
+<section id="tarea---conjuntos" class="slide level2">
+<h2>Tarea - Conjuntos:</h2>
+<p>Ejercicio de pertenencia: 1. Genera un conjunto aleatorio de números enteros del 1 al 10. 2. Solicita al usuario que ingrese un número. 3. Verifica si el número ingresado pertenece al conjunto y muestra un mensaje adecuado en la salida.</p>
+<p>Ejercicio de intersección:</p>
+<ol type="1">
+<li>Crea dos conjuntos aleatorios de letras minúsculas.</li>
+<li>Calcula la intersección de los dos conjuntos y muestra el resultado en la salida.</li>
+</ol>
+<p>Ejercicio de unión:</p>
+<ol type="1">
+<li>Crea dos conjuntos aleatorios de números del 1 al 10.</li>
+<li>Calcula la unión de los dos conjuntos y muestra el resultado en la salida.</li>
+</ol>
+<p>Ejercicio de subconjunto:</p>
+<ol type="1">
+<li>Genera un conjunto aleatorio de números pares del 2 al 10.</li>
+<li>Crea un segundo conjunto con los números del 1 al 10.</li>
+<li>Verifica si el primer conjunto es un subconjunto del segundo y muestra un mensaje adecuado en la salida.</li>
+</ol>
+<p>Ejercicio de diferencia:</p>
+<ol type="1">
+<li>Crea dos conjuntos aleatorios de letras minúsculas.</li>
+<li>Calcula la diferencia entre el primer conjunto y el segundo conjunto y muestra el resultado en la salida.</li>
+</ol>
+<p>En esta tarea, hemos utilizado diferentes operaciones de conjuntos como pertenencia, intersección, unión, subconjunto y diferencia. Cada ejercicio te permite practicar y comprender mejor estos conceptos clave en el manejo de conjuntos.</p>
 <p><img src="img/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://espe.edu.ec" class="uri">https://espe.edu.ec</a></p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
