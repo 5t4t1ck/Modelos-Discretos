@@ -200,28 +200,29 @@ Recuerda importar el módulo itertools en caso de utilizar el ejercicio 9.
 
 ## Tarea - Conjuntos:
 
-Ejercicio de pertenencia:
+**Ejercicio de pertenencia:**
+
 1. Genera un conjunto aleatorio de números enteros del 1 al 10.
 2. Solicita al usuario que ingrese un número.
 3. Verifica si el número ingresado pertenece al conjunto y muestra un mensaje adecuado en la salida.
 
-Ejercicio de intersección:
+**Ejercicio de intersección:**
 
 1. Crea dos conjuntos aleatorios de letras minúsculas.
 2. Calcula la intersección de los dos conjuntos y muestra el resultado en la salida.
 
-Ejercicio de unión:
+**Ejercicio de unión:**
 
 1. Crea dos conjuntos aleatorios de números del 1 al 10.
 2. Calcula la unión de los dos conjuntos y muestra el resultado en la salida.
 
-Ejercicio de subconjunto:
+**Ejercicio de subconjunto:**
 
 1. Genera un conjunto aleatorio de números pares del 2 al 10.
 2. Crea un segundo conjunto con los números del 1 al 10.
 3. Verifica si el primer conjunto es un subconjunto del segundo y muestra un mensaje adecuado en la salida.
 
-Ejercicio de diferencia:
+**Ejercicio de diferencia:**
 
 1. Crea dos conjuntos aleatorios de letras minúsculas.
 2. Calcula la diferencia entre el primer conjunto y el segundo conjunto y muestra el resultado en la salida.
