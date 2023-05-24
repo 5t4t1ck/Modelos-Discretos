@@ -1,0 +1,229 @@
+---
+title: "Ejercicios de Conjuntos"
+subtitle: "Modelos Discretos"
+date: "today"
+author: "Lic. Diego Medardo Saavedra García Mg. Sc."
+lang: "es"
+format:
+  revealjs:
+    #chalkboard: 
+      #buttons: false
+    toc: true
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    logo: img/logo.png
+    footer: <https://espe.edu.ec>
+    theme: dark
+    makeindex: true
+    multiplex: true
+    transition: fade
+    chalkboard: true #Pizarra
+    auto-stretch: false
+    smaller: false
+    scrollable: true
+    #presentation-title-slide-text-alig: left
+    presentation-slide-text-align: center
+    menu: true
+    codeBlock: {data-trim: true}
+    execute: false
+    executeCode: true
+  #html: 
+    
+    #code-fold: true
+    #html-math-method: katex
+    #multiplex: true
+    #transition: fade
+    #auto-stretch: false
+bibliography: Bibliografia.bib
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl"
+editor_options: 
+  chunk_output_type: console
+---
+
+# Ejercicios de Conjuntos
+
+## Ejercicio 1: Verificar si un elemento pertenece a un conjunto.
+
+```{python}
+#| echo: true
+# Ejercicio 1
+conjunto = {1, 2, 3, 4, 5}
+elemento = 3
+
+if elemento in conjunto:
+    print(f"El elemento {elemento} pertenece al conjunto.")
+else:
+    print(f"El elemento {elemento} no pertenece al conjunto.")
+```
+
+**Explicación:** En este ejercicio, verificamos si el elemento 3 pertenece al conjunto dado. Utilizamos el operador in para verificar la pertenencia y mostramos el resultado en la salida.
+
+## Ejercicio 2: Calcular la intersección de dos conjuntos.
+
+```{python}
+#| echo: true
+# Ejercicio 2
+
+conjunto1 = {1, 2, 3, 4}
+conjunto2 = {3, 4, 5, 6}
+
+interseccion = conjunto1.intersection(conjunto2)
+print("La intersección de los conjuntos es:", interseccion)
+
+```
+
+**Explicación:** En este ejercicio, utilizamos el método intersection() para calcular la intersección de los conjuntos conjunto1 y conjunto2. Luego, mostramos el resultado en la salida.
+
+## Ejercicio 3: Calcular la unión de dos conjuntos.
+
+```{python}
+#| echo: true
+# Ejercicio 3
+conjunto1 = {1, 2, 3}
+conjunto2 = {3, 4, 5}
+
+union = conjunto1.union(conjunto2)
+print("La unión de los conjuntos es:", union)
+```
+
+**Explicación:** En este ejercicio, utilizamos el método union() para calcular la unión de los conjuntos conjunto1 y conjunto2. Mostramos el resultado en la salida.
+
+## Ejercicio 4: Verificar si un conjunto es subconjunto de otro.
+
+```{python}
+#| echo: true
+# Ejercicio 4
+conjunto1 = {1, 2, 3, 4}
+conjunto2 = {1, 2, 3}
+
+if conjunto2.issubset(conjunto1):
+    print("El conjunto 2 es un subconjunto del conjunto 1.")
+else:
+    print("El conjunto 2 no es un subconjunto del conjunto 1.")
+```
+
+**Explicación:** En este ejercicio, utilizamos el método issubset() para verificar si conjunto2 es un subconjunto de conjunto1. Mostramos el resultado en la salida.
+
+## Ejercicio 5: Calcular la diferencia entre dos conjuntos.
+
+```{python}
+#| echo: true
+# Ejercicio 5
+conjunto1 = {1, 2, 3, 4}
+conjunto2 = {3, 4, 5}
+
+diferencia = conjunto1.difference(conjunto2)
+print("La diferencia entre los conjuntos es:", diferencia)
+```
+
+**Explicación:** En este ejercicio, utilizamos el método difference() para calcular la diferencia entre los conjuntos conjunto1 y conjunto2. Mostramos el resultado en la salida.
+
+## Ejercicio 6: Calcular el complemento de un conjunto en relación con un universo.
+
+```{python}
+#| echo: true
+# Ejercicio 6
+universo = {1, 2, 3, 4, 5, 6}
+conjunto = {1, 3} 
+complemento = universo.difference(conjunto)
+print("El complemento del conjunto en relación con el universo es:", complemento)
+
+```
+
+**Explicación:** En este ejercicio, utilizamos el método difference() para calcular el complemento del conjunto conjunto en relación con el conjunto universo. Mostramos el resultado en la salida.
+
+## Ejercicio 7: Verificar si dos conjuntos son disjuntos (no tienen elementos en común).
+
+```{python}
+#| echo: true
+# Ejercicio 7
+conjunto1 = {1, 2, 3}
+conjunto2 = {4, 5, 6}
+
+if conjunto1.isdisjoint(conjunto2):
+    print("Los conjuntos son disjuntos, no tienen elementos en común.")
+else:
+    print("Los conjuntos tienen elementos en común.")
+
+```
+
+**Explicación:** En este ejercicio, utilizamos el método isdisjoint() para verificar si los conjuntos conjunto1 y conjunto2 son disjuntos, es decir, si no tienen elementos en común. Mostramos el resultado en la salida.
+
+## Ejercicio 8: Calcular la suma booleana de dos conjuntos.
+
+```{python}
+#| echo: true
+
+# Ejercicio 8
+conjunto1 = {1, 2, 3}
+conjunto2 = {2, 3, 4}
+
+suma_booleana = conjunto1.symmetric_difference(conjunto2)
+print("La suma booleana de los conjuntos es:", suma_booleana)
+```
+
+**Explicación:** En este ejercicio, utilizamos el método symmetric_difference() para calcular la suma booleana de los conjuntos conjunto1 y conjunto2. La suma booleana representa los elementos que están en uno de los conjuntos pero no en ambos. Mostramos el resultado en la salida.
+
+## Ejercicio 9: Calcular el conjunto potencia de un conjunto.
+
+```{python}
+#| echo: true
+# Ejercicio 9
+conjunto = {1, 2, 3}
+
+conjunto_potencia = set()
+for i in range(len(conjunto)+1):
+    for subset in itertools.combinations(conjunto, i):
+        conjunto_potencia.add(subset)
+
+print("El conjunto potencia de", conjunto, "es:", conjunto_potencia)
+```
+
+**Explicación:** En este ejercicio, utilizamos el módulo itertools para generar todas las combinaciones posibles de elementos del conjunto y construir el conjunto potencia. Mostramos el resultado en la salida.
+
+## Ejercicio 10: Calcular el número de elementos en un conjunto.
+
+```{python}
+#| echo: true
+
+# Ejercicio 10
+conjunto = {1, 2, 3, 4, 5}
+
+cantidad_elementos = len(conjunto)
+print("El conjunto tiene", cantidad_elementos, "elementos.")
+```
+
+**Explicación:** En este ejercicio, utilizamos la función len() para calcular el número de elementos en el conjunto y lo mostramos en la salida.
+
+Recuerda importar el módulo itertools en caso de utilizar el ejercicio 9.
+
+## Tarea - Conjuntos:
+
+Ejercicio de pertenencia:
+1. Genera un conjunto aleatorio de números enteros del 1 al 10.
+2. Solicita al usuario que ingrese un número.
+3. Verifica si el número ingresado pertenece al conjunto y muestra un mensaje adecuado en la salida.
+
+Ejercicio de intersección:
+
+1. Crea dos conjuntos aleatorios de letras minúsculas.
+2. Calcula la intersección de los dos conjuntos y muestra el resultado en la salida.
+
+Ejercicio de unión:
+
+1. Crea dos conjuntos aleatorios de números del 1 al 10.
+2. Calcula la unión de los dos conjuntos y muestra el resultado en la salida.
+
+Ejercicio de subconjunto:
+
+1. Genera un conjunto aleatorio de números pares del 2 al 10.
+2. Crea un segundo conjunto con los números del 1 al 10.
+3. Verifica si el primer conjunto es un subconjunto del segundo y muestra un mensaje adecuado en la salida.
+
+Ejercicio de diferencia:
+
+1. Crea dos conjuntos aleatorios de letras minúsculas.
+2. Calcula la diferencia entre el primer conjunto y el segundo conjunto y muestra el resultado en la salida.
+
+En esta tarea, hemos utilizado diferentes operaciones de conjuntos como pertenencia, intersección, unión, subconjunto y diferencia. Cada ejercicio te permite practicar y comprender mejor estos conceptos clave en el manejo de conjuntos.
