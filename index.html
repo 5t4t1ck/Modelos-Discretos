@@ -10,9 +10,9 @@
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.340">
 
-  <meta name="author" content="Lic. Diego Medardo Saavedra García Mg. Sc.">
-  <meta name="dcterms.date" content="2023-05-24">
-  <title>Ejercicios de Conjuntos</title>
+  <meta name="author" content="Lcdo. Diego Medardo Saavedra García. Mgtr.">
+  <meta name="dcterms.date" content="2023-06-07">
+  <title>Introducción a la Lógica de Predicados del Primer Orden (LPPO)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -394,208 +394,304 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Ejercicios de Conjuntos</h1>
-  <p class="subtitle">Modelos Discretos</p>
+  <h1 class="title">Introducción a la Lógica de Predicados del Primer Orden (LPPO)</h1>
+  <p class="subtitle">Introducción a la Lógica</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Lic. Diego Medardo Saavedra García Mg. Sc. 
+Lcdo. Diego Medardo Saavedra García. Mgtr. 
 </div>
 </div>
 </div>
 
-  <p class="date">2023-05-24</p>
+  <p class="date">2023-06-07</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Tabla de contenidos</h2>
 <ul>
-<li><a href="#/ejercicios-de-conjuntos" id="/toc-ejercicios-de-conjuntos">Ejercicios de Conjuntos</a>
-<ul>
-<li><a href="#/ejercicio-1-verificar-si-un-elemento-pertenece-a-un-conjunto." id="/toc-ejercicio-1-verificar-si-un-elemento-pertenece-a-un-conjunto.">Ejercicio 1: Verificar si un elemento pertenece a un conjunto.</a></li>
-<li><a href="#/ejercicio-2-calcular-la-intersección-de-dos-conjuntos." id="/toc-ejercicio-2-calcular-la-intersección-de-dos-conjuntos.">Ejercicio 2: Calcular la intersección de dos conjuntos.</a></li>
-<li><a href="#/ejercicio-3-calcular-la-unión-de-dos-conjuntos." id="/toc-ejercicio-3-calcular-la-unión-de-dos-conjuntos.">Ejercicio 3: Calcular la unión de dos conjuntos.</a></li>
-<li><a href="#/ejercicio-4-verificar-si-un-conjunto-es-subconjunto-de-otro." id="/toc-ejercicio-4-verificar-si-un-conjunto-es-subconjunto-de-otro.">Ejercicio 4: Verificar si un conjunto es subconjunto de otro.</a></li>
-<li><a href="#/ejercicio-5-calcular-la-diferencia-entre-dos-conjuntos." id="/toc-ejercicio-5-calcular-la-diferencia-entre-dos-conjuntos.">Ejercicio 5: Calcular la diferencia entre dos conjuntos.</a></li>
-<li><a href="#/ejercicio-6-calcular-el-complemento-de-un-conjunto-en-relación-con-un-universo." id="/toc-ejercicio-6-calcular-el-complemento-de-un-conjunto-en-relación-con-un-universo.">Ejercicio 6: Calcular el complemento de un conjunto en relación con un universo.</a></li>
-<li><a href="#/ejercicio-7-verificar-si-dos-conjuntos-son-disjuntos-no-tienen-elementos-en-común." id="/toc-ejercicio-7-verificar-si-dos-conjuntos-son-disjuntos-no-tienen-elementos-en-común.">Ejercicio 7: Verificar si dos conjuntos son disjuntos (no tienen elementos en común).</a></li>
-<li><a href="#/ejercicio-8-calcular-la-suma-booleana-de-dos-conjuntos." id="/toc-ejercicio-8-calcular-la-suma-booleana-de-dos-conjuntos.">Ejercicio 8: Calcular la suma booleana de dos conjuntos.</a></li>
-<li><a href="#/ejercicio-9-calcular-el-conjunto-potencia-de-un-conjunto." id="/toc-ejercicio-9-calcular-el-conjunto-potencia-de-un-conjunto.">Ejercicio 9: Calcular el conjunto potencia de un conjunto.</a></li>
-<li><a href="#/ejercicio-10-calcular-el-número-de-elementos-en-un-conjunto." id="/toc-ejercicio-10-calcular-el-número-de-elementos-en-un-conjunto.">Ejercicio 10: Calcular el número de elementos en un conjunto.</a></li>
-<li><a href="#/tarea---conjuntos" id="/toc-tarea---conjuntos">Tarea - Conjuntos:</a></li>
-</ul></li>
+<li><a href="#/introducción." id="/toc-introducción.">Introducción.</a></li>
+<li><a href="#/qué-es-la-lógica-de-predicados-del-primer-orden" id="/toc-qué-es-la-lógica-de-predicados-del-primer-orden">¿Qué es la Lógica de Predicados del Primer Orden?</a></li>
+<li><a href="#/componentes-de-lppo." id="/toc-componentes-de-lppo.">Componentes de LPPO.</a></li>
+<li><a href="#/sintaxis-de-lppo." id="/toc-sintaxis-de-lppo.">Sintaxis de LPPO.</a></li>
+<li><a href="#/cuantificadores-en-lppo." id="/toc-cuantificadores-en-lppo.">Cuantificadores en LPPO.</a></li>
+<li><a href="#/inferencia-y-validez-en-lppo." id="/toc-inferencia-y-validez-en-lppo.">Inferencia y Validez en LPPO.</a></li>
+<li><a href="#/algoritmo-de-unificación." id="/toc-algoritmo-de-unificación.">Algoritmo de Unificación.</a></li>
+<li><a href="#/ejemplo-de-unificación-en-c." id="/toc-ejemplo-de-unificación-en-c.">Ejemplo de Unificación en C++.</a></li>
+<li><a href="#/ejemplo-de-unificación-en-python." id="/toc-ejemplo-de-unificación-en-python.">Ejemplo de Unificación en Python.</a></li>
+<li><a href="#/ejemplo-de-unificación-en-java." id="/toc-ejemplo-de-unificación-en-java.">Ejemplo de Unificación en Java.</a></li>
+<li><a href="#/resolución-en-lppo." id="/toc-resolución-en-lppo.">Resolución en LPPO.</a></li>
+<li><a href="#/ejemplo-de-resolución-en-lppo." id="/toc-ejemplo-de-resolución-en-lppo.">Ejemplo de Resolución en LPPO.</a></li>
+<li><a href="#/aplicaciones-de-lppo." id="/toc-aplicaciones-de-lppo.">Aplicaciones de LPPO.</a></li>
+<li><a href="#/conclusiones." id="/toc-conclusiones.">Conclusiones.</a></li>
+<li><a href="#/referencias-bibliográficas." id="/toc-referencias-bibliográficas.">Referencias Bibliográficas.</a></li>
 </ul>
 </nav>
 </section>
-<section>
-<section id="ejercicios-de-conjuntos" class="title-slide slide level1 center">
-<h1>Ejercicios de Conjuntos</h1>
-
+<section id="introducción." class="slide level2">
+<h2>Introducción.</h2>
+<ul>
+<li>En esta presentación, exploraremos los conceptos fundamentales de la Lógica de Predicados del Primer Orden (LPPO), su importancia en la lógica y la programación, y cómo se aplica en diversos dominios.</li>
+</ul>
 </section>
-<section id="ejercicio-1-verificar-si-un-elemento-pertenece-a-un-conjunto." class="slide level2">
-<h2>Ejercicio 1: Verificar si un elemento pertenece a un conjunto.</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Ejercicio 1</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>conjunto <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>}</span>
-<span id="cb1-3"><a href="#cb1-3"></a>elemento <span class="op">=</span> <span class="dv">3</span></span>
+<section id="qué-es-la-lógica-de-predicados-del-primer-orden" class="slide level2">
+<h2>¿Qué es la Lógica de Predicados del Primer Orden?</h2>
+<ul>
+<li><p>LPPO es un sistema formal que permite expresar proposiciones más complejas que la lógica proposicional.</p></li>
+<li><p>En LPPO, utilizamos cuantificadores (existencial y universal) y predicados para expresar relaciones y propiedades entre los elementos de un dominio.</p></li>
+<li><p>Proporciona un marco para la especificación precisa de relaciones y propiedades en diversos dominios.</p></li>
+</ul>
+</section>
+<section id="componentes-de-lppo." class="slide level2">
+<h2>Componentes de LPPO.</h2>
+<ul>
+<li><p>En LPPO, trabajamos con varios componentes clave:</p>
+<ul>
+<li><p>Constantes: Representan elementos específicos en un dominio. Por ejemplo, “Juan” podría ser una constante que representa a una persona llamada Juan.</p></li>
+<li><p>Variables: Representan elementos genéricos en un dominio. Se utilizan para expresar proposiciones que son verdaderas para cualquier elemento del dominio.</p></li>
+<li><p>Funciones: Mapean elementos de un dominio a otros elementos. Por ejemplo, una función “suma(x, y)” podría sumar dos números.</p></li>
+<li><p>Predicados: Expresan propiedades o relaciones entre elementos del dominio. Por ejemplo, “esMayorDeEdad(x)” podría ser un predicado que verifica si una persona x es mayor de edad.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="sintaxis-de-lppo." class="slide level2">
+<h2>Sintaxis de LPPO.</h2>
+<ul>
+<li><p>La sintaxis de LPPO define cómo se construyen las fórmulas válidas en el lenguaje.</p></li>
+<li><p>Incluye símbolos para constantes, variables, funciones, predicados, cuantificadores y conectores lógicos.</p></li>
+<li><p>Estas reglas sintácticas aseguran que las fórmulas estén bien formadas y puedan ser interpretadas correctamente.</p></li>
+</ul>
+</section>
+<section id="cuantificadores-en-lppo." class="slide level2">
+<h2>Cuantificadores en LPPO.</h2>
+<ul>
+<li><p>Los cuantificadores en LPPO son herramientas poderosas para expresar cuantidades y alcance de las proposiciones.</p></li>
+<li><p>El cuantificador existencial (∃) se usa para expresar que hay al menos un elemento en el dominio que satisface una propiedad.</p></li>
+<li><p>El cuantificador universal (∀) se usa para expresar que todos los elementos en el dominio satisfacen una propiedad.</p></li>
+</ul>
+</section>
+<section id="inferencia-y-validez-en-lppo." class="slide level2">
+<h2>Inferencia y Validez en LPPO.</h2>
+<ul>
+<li><p>La inferencia es el proceso de razonamiento que nos permite obtener nuevas conclusiones a partir de premisas en LPPO.</p></li>
+<li><p>La validez se refiere a si una fórmula es verdadera en todos los posibles modelos.</p></li>
+<li><p>Estos conceptos son fundamentales para demostrar la corrección y coherencia de los razonamientos lógicos en LPPO.</p></li>
+</ul>
+</section>
+<section id="algoritmo-de-unificación." class="slide level2">
+<h2>Algoritmo de Unificación.</h2>
+<ul>
+<li><p>El algoritmo de unificación es utilizado en LPPO para encontrar asignaciones de valores a variables que hacen que dos términos sean iguales.</p></li>
+<li><p>Es ampliamente utilizado en la resolución de problemas en LPPO y es esencial para la inferencia y la demostración de validez.</p></li>
+</ul>
+</section>
+<section id="ejemplo-de-unificación-en-c." class="slide level2">
+<h2>Ejemplo de Unificación en C++.</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource cpp number-lines code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="pp">#include </span><span class="im">&lt;unordered_map&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="cf">if</span> elemento <span class="kw">in</span> conjunto:</span>
-<span id="cb1-6"><a href="#cb1-6"></a>    <span class="bu">print</span>(<span class="ss">f"El elemento </span><span class="sc">{</span>elemento<span class="sc">}</span><span class="ss"> pertenece al conjunto."</span>)</span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="cf">else</span>:</span>
-<span id="cb1-8"><a href="#cb1-8"></a>    <span class="bu">print</span>(<span class="ss">f"El elemento </span><span class="sc">{</span>elemento<span class="sc">}</span><span class="ss"> no pertenece al conjunto."</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, verificamos si el elemento 3 pertenece al conjunto dado. Utilizamos el operador in para verificar la pertenencia y mostramos el resultado en la salida.</p>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="kw">using</span> <span class="kw">namespace</span> std<span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co">// Función de unificación</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="dt">bool</span> unificar<span class="op">(</span>string term1<span class="op">,</span> string term2<span class="op">,</span> unordered_map<span class="op">&lt;</span>string<span class="op">,</span> string<span class="op">&gt;&amp;</span> unificador<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>    <span class="cf">if</span> <span class="op">(</span>term1 <span class="op">==</span> term2<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>    <span class="op">}</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>    <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>term1<span class="op">[</span><span class="dv">0</span><span class="op">]</span> <span class="op">==</span> <span class="ch">'?'</span> <span class="op">&amp;&amp;</span> term2<span class="op">[</span><span class="dv">0</span><span class="op">]</span> <span class="op">!=</span> <span class="ch">'?'</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>        unificador<span class="op">[</span>term1<span class="op">]</span> <span class="op">=</span> term2<span class="op">;</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>    <span class="op">}</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>    <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>term1<span class="op">[</span><span class="dv">0</span><span class="op">]</span> <span class="op">!=</span> <span class="ch">'?'</span> <span class="op">&amp;&amp;</span> term2<span class="op">[</span><span class="dv">0</span><span class="op">]</span> <span class="op">==</span> <span class="ch">'?'</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a>        unificador<span class="op">[</span>term2<span class="op">]</span> <span class="op">=</span> term1<span class="op">;</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a>        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a>    <span class="op">}</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a>    <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="op">}</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="dt">int</span> main<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a>    unordered_map<span class="op">&lt;</span>string<span class="op">,</span> string<span class="op">&gt;</span> unificador<span class="op">;</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a>    string term1 <span class="op">=</span> <span class="st">"x"</span><span class="op">;</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a>    string term2 <span class="op">=</span> <span class="st">"John"</span><span class="op">;</span></span>
+<span id="cb1-27"><a href="#cb1-27"></a>    </span>
+<span id="cb1-28"><a href="#cb1-28"></a>    <span class="cf">if</span> <span class="op">(</span>unificar<span class="op">(</span>term1<span class="op">,</span> term2<span class="op">,</span> unificador<span class="op">))</span> <span class="op">{</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a>        cout <span class="op">&lt;&lt;</span> <span class="st">"Unificación exitosa!"</span> <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a>        cout <span class="op">&lt;&lt;</span> <span class="st">"Valores asignados: "</span> <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb1-31"><a href="#cb1-31"></a>        <span class="cf">for</span> <span class="op">(</span><span class="kw">auto</span> it <span class="op">=</span> unificador<span class="op">.</span>begin<span class="op">();</span> it <span class="op">!=</span> unificador<span class="op">.</span>end<span class="op">();</span> <span class="op">++</span>it<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a>            cout <span class="op">&lt;&lt;</span> it<span class="op">-&gt;</span>first <span class="op">&lt;&lt;</span> <span class="st">" = "</span> <span class="op">&lt;&lt;</span> it<span class="op">-&gt;</span>second <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a>        <span class="op">}</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a>    <span class="op">}</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a>    <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a>        cout <span class="op">&lt;&lt;</span> <span class="st">"No se pudo unificar los términos."</span> <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a>    <span class="op">}</span></span>
+<span id="cb1-38"><a href="#cb1-38"></a>    </span>
+<span id="cb1-39"><a href="#cb1-39"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="op">}</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>En este ejemplo, se define una función de unificación que toma dos términos y un mapa para almacenar las asignaciones de valores a las variables.</p></li>
+<li><p>La función verifica si los términos son iguales o si uno de ellos es una variable sin asignar.</p></li>
+<li><p>Si los términos pueden unificarse, se guarda la asignación en el mapa de unificador.</p></li>
+<li><p>Al ejecutar el programa, se muestra un mensaje de unificación exitosa y se imprimen los valores asignados.</p></li>
+</ul>
 </section>
-<section id="ejercicio-2-calcular-la-intersección-de-dos-conjuntos." class="slide level2">
-<h2>Ejercicio 2: Calcular la intersección de dos conjuntos.</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Ejercicio 2</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</span>
-<span id="cb2-4"><a href="#cb2-4"></a>conjunto2 <span class="op">=</span> {<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>}</span>
-<span id="cb2-5"><a href="#cb2-5"></a></span>
-<span id="cb2-6"><a href="#cb2-6"></a>interseccion <span class="op">=</span> conjunto1.intersection(conjunto2)</span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="bu">print</span>(<span class="st">"La intersección de los conjuntos es:"</span>, interseccion)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método intersection() para calcular la intersección de los conjuntos conjunto1 y conjunto2. Luego, mostramos el resultado en la salida.</p>
+<section id="ejemplo-de-unificación-en-python." class="slide level2">
+<h2>Ejemplo de Unificación en Python.</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">def</span> unificar(term1, term2, unificador):</span>
+<span id="cb2-2"><a href="#cb2-2"></a>    <span class="cf">if</span> term1 <span class="op">==</span> term2:</span>
+<span id="cb2-3"><a href="#cb2-3"></a>        <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="cf">elif</span> term1[<span class="dv">0</span>] <span class="op">==</span> <span class="st">'?'</span> <span class="kw">and</span> term2[<span class="dv">0</span>] <span class="op">!=</span> <span class="st">'?'</span>:</span>
+<span id="cb2-5"><a href="#cb2-5"></a>        unificador[term1] <span class="op">=</span> term2</span>
+<span id="cb2-6"><a href="#cb2-6"></a>        <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="cf">elif</span> term1[<span class="dv">0</span>] <span class="op">!=</span> <span class="st">'?'</span> <span class="kw">and</span> term2[<span class="dv">0</span>] <span class="op">==</span> <span class="st">'?'</span>:</span>
+<span id="cb2-8"><a href="#cb2-8"></a>        unificador[term2] <span class="op">=</span> term1</span>
+<span id="cb2-9"><a href="#cb2-9"></a>        <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a>    <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a></span>
+<span id="cb2-12"><a href="#cb2-12"></a>unificador <span class="op">=</span> {}</span>
+<span id="cb2-13"><a href="#cb2-13"></a>term1 <span class="op">=</span> <span class="st">"x"</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>term2 <span class="op">=</span> <span class="st">"John"</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="cf">if</span> unificar(term1, term2, unificador):</span>
+<span id="cb2-17"><a href="#cb2-17"></a>    <span class="bu">print</span>(<span class="st">"Unificación exitosa!"</span>)</span>
+<span id="cb2-18"><a href="#cb2-18"></a>    <span class="bu">print</span>(<span class="st">"Valores asignados:"</span>)</span>
+<span id="cb2-19"><a href="#cb2-19"></a>    <span class="cf">for</span> key, value <span class="kw">in</span> unificador.items():</span>
+<span id="cb2-20"><a href="#cb2-20"></a>        <span class="bu">print</span>(key, <span class="st">"="</span>, value)</span>
+<span id="cb2-21"><a href="#cb2-21"></a><span class="cf">else</span>:</span>
+<span id="cb2-22"><a href="#cb2-22"></a>    <span class="bu">print</span>(<span class="st">"No se pudo unificar los términos."</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>En este ejemplo, se presenta una implementación del algoritmo de unificación en Python.</p></li>
+<li><p>La función <code>unificar</code> toma dos términos y un diccionario para almacenar las asignaciones de valores a las variables.</p></li>
+<li><p>Se verifica si los términos son iguales o si uno de ellos es una variable sin asignar.</p></li>
+<li><p>Si los términos pueden unificarse, se guarda la asignación en el diccionario de <code>unificador</code>.</p></li>
+<li><p>Al ejecutar el programa, se muestra un mensaje de unificación exitosa y se imprimen los valores asignados.</p></li>
+</ul>
 </section>
-<section id="ejercicio-3-calcular-la-unión-de-dos-conjuntos." class="slide level2">
-<h2>Ejercicio 3: Calcular la unión de dos conjuntos.</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Ejercicio 3</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
-<span id="cb3-3"><a href="#cb3-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>}</span>
-<span id="cb3-4"><a href="#cb3-4"></a></span>
-<span id="cb3-5"><a href="#cb3-5"></a>union <span class="op">=</span> conjunto1.union(conjunto2)</span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="bu">print</span>(<span class="st">"La unión de los conjuntos es:"</span>, union)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método union() para calcular la unión de los conjuntos conjunto1 y conjunto2. Mostramos el resultado en la salida.</p>
+<section id="ejemplo-de-unificación-en-java." class="slide level2">
+<h2>Ejemplo de Unificación en Java.</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource java number-lines code-with-copy"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">import</span> <span class="im">java</span><span class="op">.</span><span class="im">util</span><span class="op">.</span><span class="im">HashMap</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">import</span> <span class="im">java</span><span class="op">.</span><span class="im">util</span><span class="op">.</span><span class="im">Map</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="kw">public</span> <span class="kw">class</span> Unificacion <span class="op">{</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a>    <span class="kw">public</span> <span class="dt">static</span> <span class="dt">boolean</span> <span class="fu">unificar</span><span class="op">(</span><span class="bu">String</span> term1<span class="op">,</span> <span class="bu">String</span> term2<span class="op">,</span> <span class="bu">Map</span><span class="op">&lt;</span><span class="bu">String</span><span class="op">,</span> <span class="bu">String</span><span class="op">&gt;</span> unificador<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>        <span class="cf">if</span> <span class="op">(</span>term1<span class="op">.</span><span class="fu">equals</span><span class="op">(</span>term2<span class="op">))</span> <span class="op">{</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>            <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>        <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>term1<span class="op">.</span><span class="fu">charAt</span><span class="op">(</span><span class="dv">0</span><span class="op">)</span> <span class="op">==</span> <span class="ch">'?'</span> <span class="op">&amp;&amp;</span> term2<span class="op">.</span><span class="fu">charAt</span><span class="op">(</span><span class="dv">0</span><span class="op">)</span> <span class="op">!=</span> <span class="ch">'?'</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>            unificador<span class="op">.</span><span class="fu">put</span><span class="op">(</span>term1<span class="op">,</span> term2<span class="op">);</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>            <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>        <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>term1<span class="op">.</span><span class="fu">charAt</span><span class="op">(</span><span class="dv">0</span><span class="op">)</span> <span class="op">!=</span> <span class="ch">'?'</span> <span class="op">&amp;&amp;</span> term2<span class="op">.</span><span class="fu">charAt</span><span class="op">(</span><span class="dv">0</span><span class="op">)</span> <span class="op">==</span> <span class="ch">'?'</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>            unificador<span class="op">.</span><span class="fu">put</span><span class="op">(</span>term2<span class="op">,</span> term1<span class="op">);</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>            <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>        <span class="op">}</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>        <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>    <span class="op">}</span></span>
+<span id="cb3-18"><a href="#cb3-18"></a></span>
+<span id="cb3-19"><a href="#cb3-19"></a>    <span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">main</span><span class="op">(</span><span class="bu">String</span><span class="op">[]</span> args<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>        <span class="bu">Map</span><span class="op">&lt;</span><span class="bu">String</span><span class="op">,</span> <span class="bu">String</span><span class="op">&gt;</span> unificador <span class="op">=</span> <span class="kw">new</span> <span class="bu">HashMap</span><span class="op">&lt;&gt;();</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a>        <span class="bu">String</span> term1 <span class="op">=</span> <span class="st">"x"</span><span class="op">;</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a>        <span class="bu">String</span> term2 <span class="op">=</span> <span class="st">"John"</span><span class="op">;</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a></span>
+<span id="cb3-24"><a href="#cb3-24"></a>        <span class="cf">if</span> <span class="op">(</span><span class="fu">unificar</span><span class="op">(</span>term1<span class="op">,</span> term2<span class="op">,</span> unificador<span class="op">))</span> <span class="op">{</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a>            <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span><span class="st">"Unificación exitosa!"</span><span class="op">);</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a>            <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span><span class="st">"Valores asignados:"</span><span class="op">);</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a>            <span class="cf">for</span> <span class="op">(</span><span class="bu">Map</span><span class="op">.</span><span class="fu">Entry</span><span class="op">&lt;</span><span class="bu">String</span><span class="op">,</span> <span class="bu">String</span><span class="op">&gt;</span> entry <span class="op">:</span> unificador<span class="op">.</span><span class="fu">entrySet</span><span class="op">())</span> <span class="op">{</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a>                <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span>entry<span class="op">.</span><span class="fu">getKey</span><span class="op">()</span> <span class="op">+</span> <span class="st">" = "</span> <span class="op">+</span> entry<span class="op">.</span><span class="fu">getValue</span><span class="op">());</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a>            <span class="op">}</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a>        <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a>            <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span><span class="st">"No se pudo unificar los términos."</span><span class="op">);</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a>        <span class="op">}</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a>    <span class="op">}</span></span>
+<span id="cb3-34"><a href="#cb3-34"></a><span class="op">}</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>En este ejemplo, se presenta una implementación del algoritmo de unificación en Java.</p></li>
+<li><p>La función <code>unificar</code> toma dos términos y un mapa para almacenar las asignaciones de valores a las variables.</p></li>
+<li><p>Se verifica si los términos son iguales o si uno de ellos es una variable sin asignar.</p></li>
+<li><p>Si los términos pueden unificarse, se guarda la asignación en el mapa de <code>unificador</code>.</p></li>
+<li><p>Al ejecutar el programa, se muestra un mensaje de unificación exitosa y se imprimen los valores asignados.</p></li>
+</ul>
 </section>
-<section id="ejercicio-4-verificar-si-un-conjunto-es-subconjunto-de-otro." class="slide level2">
-<h2>Ejercicio 4: Verificar si un conjunto es subconjunto de otro.</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Ejercicio 4</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</span>
-<span id="cb4-3"><a href="#cb4-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
-<span id="cb4-4"><a href="#cb4-4"></a></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="cf">if</span> conjunto2.issubset(conjunto1):</span>
-<span id="cb4-6"><a href="#cb4-6"></a>    <span class="bu">print</span>(<span class="st">"El conjunto 2 es un subconjunto del conjunto 1."</span>)</span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="cf">else</span>:</span>
-<span id="cb4-8"><a href="#cb4-8"></a>    <span class="bu">print</span>(<span class="st">"El conjunto 2 no es un subconjunto del conjunto 1."</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método issubset() para verificar si conjunto2 es un subconjunto de conjunto1. Mostramos el resultado en la salida.</p>
+<section id="resolución-en-lppo." class="slide level2">
+<h2>Resolución en LPPO.</h2>
+<ul>
+<li><p>La resolución es un método de inferencia utilizado en LPPO para demostrar la validez de una fórmula o encontrar modelos que satisfacen una fórmula.</p></li>
+<li><p>Se basa en la idea de refutación, donde se busca una contradicción asumiendo que la fórmula a demostrar es falsa.</p></li>
+<li><p>La resolución se aplica mediante la aplicación de reglas de inferencia y la eliminación de cláusulas.</p></li>
+<li><p>Es un método general y completo para la demostración de teoremas en LPPO.</p></li>
+</ul>
 </section>
-<section id="ejercicio-5-calcular-la-diferencia-entre-dos-conjuntos." class="slide level2">
-<h2>Ejercicio 5: Calcular la diferencia entre dos conjuntos.</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Ejercicio 5</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</span>
-<span id="cb5-3"><a href="#cb5-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>}</span>
-<span id="cb5-4"><a href="#cb5-4"></a></span>
-<span id="cb5-5"><a href="#cb5-5"></a>diferencia <span class="op">=</span> conjunto1.difference(conjunto2)</span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="bu">print</span>(<span class="st">"La diferencia entre los conjuntos es:"</span>, diferencia)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método difference() para calcular la diferencia entre los conjuntos conjunto1 y conjunto2. Mostramos el resultado en la salida.</p>
-</section>
-<section id="ejercicio-6-calcular-el-complemento-de-un-conjunto-en-relación-con-un-universo." class="slide level2">
-<h2>Ejercicio 6: Calcular el complemento de un conjunto en relación con un universo.</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Ejercicio 6</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>universo <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>}</span>
-<span id="cb6-3"><a href="#cb6-3"></a>conjunto <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">3</span>} </span>
-<span id="cb6-4"><a href="#cb6-4"></a>complemento <span class="op">=</span> universo.difference(conjunto)</span>
-<span id="cb6-5"><a href="#cb6-5"></a><span class="bu">print</span>(<span class="st">"El complemento del conjunto en relación con el universo es:"</span>, complemento)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método difference() para calcular el complemento del conjunto conjunto en relación con el conjunto universo. Mostramos el resultado en la salida.</p>
-</section>
-<section id="ejercicio-7-verificar-si-dos-conjuntos-son-disjuntos-no-tienen-elementos-en-común." class="slide level2">
-<h2>Ejercicio 7: Verificar si dos conjuntos son disjuntos (no tienen elementos en común).</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Ejercicio 7</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
-<span id="cb7-3"><a href="#cb7-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>}</span>
-<span id="cb7-4"><a href="#cb7-4"></a></span>
-<span id="cb7-5"><a href="#cb7-5"></a><span class="cf">if</span> conjunto1.isdisjoint(conjunto2):</span>
-<span id="cb7-6"><a href="#cb7-6"></a>    <span class="bu">print</span>(<span class="st">"Los conjuntos son disjuntos, no tienen elementos en común."</span>)</span>
-<span id="cb7-7"><a href="#cb7-7"></a><span class="cf">else</span>:</span>
-<span id="cb7-8"><a href="#cb7-8"></a>    <span class="bu">print</span>(<span class="st">"Los conjuntos tienen elementos en común."</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método isdisjoint() para verificar si los conjuntos conjunto1 y conjunto2 son disjuntos, es decir, si no tienen elementos en común. Mostramos el resultado en la salida.</p>
-</section>
-<section id="ejercicio-8-calcular-la-suma-booleana-de-dos-conjuntos." class="slide level2">
-<h2>Ejercicio 8: Calcular la suma booleana de dos conjuntos.</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Ejercicio 8</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a>conjunto1 <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
-<span id="cb8-3"><a href="#cb8-3"></a>conjunto2 <span class="op">=</span> {<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</span>
-<span id="cb8-4"><a href="#cb8-4"></a></span>
-<span id="cb8-5"><a href="#cb8-5"></a>suma_booleana <span class="op">=</span> conjunto1.symmetric_difference(conjunto2)</span>
-<span id="cb8-6"><a href="#cb8-6"></a><span class="bu">print</span>(<span class="st">"La suma booleana de los conjuntos es:"</span>, suma_booleana)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, utilizamos el método symmetric_difference() para calcular la suma booleana de los conjuntos conjunto1 y conjunto2. La suma booleana representa los elementos que están en uno de los conjuntos pero no en ambos. Mostramos el resultado en la salida.</p>
-</section>
-<section id="ejercicio-9-calcular-el-conjunto-potencia-de-un-conjunto." class="slide level2">
-<h2>Ejercicio 9: Calcular el conjunto potencia de un conjunto.</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Ejercicio 9</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a>conjunto <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span>
-<span id="cb9-3"><a href="#cb9-3"></a></span>
-<span id="cb9-4"><a href="#cb9-4"></a>conjunto_potencia <span class="op">=</span> <span class="bu">set</span>()</span>
-<span id="cb9-5"><a href="#cb9-5"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(conjunto)<span class="op">+</span><span class="dv">1</span>):</span>
-<span id="cb9-6"><a href="#cb9-6"></a>    <span class="cf">for</span> subset <span class="kw">in</span> itertools.combinations(conjunto, i):</span>
-<span id="cb9-7"><a href="#cb9-7"></a>        conjunto_potencia.add(subset)</span>
-<span id="cb9-8"><a href="#cb9-8"></a></span>
-<span id="cb9-9"><a href="#cb9-9"></a><span class="bu">print</span>(<span class="st">"El conjunto potencia de"</span>, conjunto, <span class="st">"es:"</span>, conjunto_potencia)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, utilizamos el módulo itertools para generar todas las combinaciones posibles de elementos del conjunto y construir el conjunto potencia. Mostramos el resultado en la salida.</p>
-</section>
-<section id="ejercicio-10-calcular-el-número-de-elementos-en-un-conjunto." class="slide level2">
-<h2>Ejercicio 10: Calcular el número de elementos en un conjunto.</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># Ejercicio 10</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a>conjunto <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>}</span>
-<span id="cb10-3"><a href="#cb10-3"></a></span>
-<span id="cb10-4"><a href="#cb10-4"></a>cantidad_elementos <span class="op">=</span> <span class="bu">len</span>(conjunto)</span>
-<span id="cb10-5"><a href="#cb10-5"></a><span class="bu">print</span>(<span class="st">"El conjunto tiene"</span>, cantidad_elementos, <span class="st">"elementos."</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Explicación:</strong> En este ejercicio, utilizamos la función len() para calcular el número de elementos en el conjunto y lo mostramos en la salida.</p>
-<p>Recuerda importar el módulo itertools en caso de utilizar el ejercicio 9.</p>
-</section>
-<section id="tarea---conjuntos" class="slide level2">
-<h2>Tarea - Conjuntos:</h2>
-<p><strong>Ejercicio de pertenencia:</strong></p>
+<section id="ejemplo-de-resolución-en-lppo." class="slide level2">
+<h2>Ejemplo de Resolución en LPPO.</h2>
+<p>Para ilustrar el proceso de resolución en LPPO, consideremos el siguiente ejemplo:</p>
+<p><strong>Premisas:</strong></p>
 <ol type="1">
-<li>Genera un conjunto aleatorio de números enteros del 1 al 10.</li>
-<li>Solicita al usuario que ingrese un número.</li>
-<li>Verifica si el número ingresado pertenece al conjunto y muestra un mensaje adecuado en la salida.</li>
+<li><p>Todos los perros ladran: ∀x (Perro(x) → Ladra(x))</p></li>
+<li><p>Pluto es un perro: Perro(Pluto)</p></li>
 </ol>
-<p><strong>Ejercicio de intersección:</strong></p>
+<p><strong>Objetivo:</strong> Demostrar que Pluto ladra (Ladra(Pluto))</p>
+<p>Para resolver este problema, aplicamos el método de resolución de la siguiente manera:</p>
 <ol type="1">
-<li>Crea dos conjuntos aleatorios de letras minúsculas.</li>
-<li>Calcula la intersección de los dos conjuntos y muestra el resultado en la salida.</li>
+<li><p><strong>Convertir las premisas a forma normal clausal:</strong> Premisa 1: ¬Perro(x) ∨ Ladra(x) Premisa 2: Perro(Pluto)</p></li>
+<li><p><strong>Agregar la negación del objetivo como cláusula:</strong> Cláusula objetivo: ¬Ladra(Pluto)</p></li>
+<li><p><strong>Aplicar reglas de inferencia para obtener nuevas cláusulas:</strong></p>
+<ul>
+<li><p>Unificar la cláusula objetivo con la premisa 1 usando la sustitución {x/Pluto}: Resultado: Ladra(Pluto)</p></li>
+<li><p>Esta nueva cláusula se agrega al conjunto de cláusulas.</p></li>
+</ul></li>
+<li><p>Repetir el paso anterior hasta que se obtenga una contradicción o no se puedan generar más cláusulas.</p></li>
 </ol>
-<p><strong>Ejercicio de unión:</strong></p>
+<p>En este ejemplo, el proceso de resolución conducirá a la obtención de la cláusula Ladra(Pluto), lo que demuestra que Pluto ladra.</p>
+<p>La resolución en LPPO es un método poderoso para demostrar la validez de fórmulas y resolver problemas lógicos en diferentes dominios.</p>
+</section>
+<section id="aplicaciones-de-lppo." class="slide level2">
+<h2>Aplicaciones de LPPO.</h2>
+<p>La Lógica de Predicados del Primer Orden (LPPO) tiene diversas aplicaciones en distintos campos, como:</p>
 <ol type="1">
-<li>Crea dos conjuntos aleatorios de números del 1 al 10.</li>
-<li>Calcula la unión de los dos conjuntos y muestra el resultado en la salida.</li>
+<li><p><strong>Inteligencia Artificial:</strong> LPPO se utiliza para representar conocimiento en sistemas expertos, razonamiento automático, planificación y procesamiento del lenguaje natural.</p></li>
+<li><p><strong>Base de datos:</strong> LPPO es la base teórica de los lenguajes de consulta como SQL. Permite realizar consultas complejas y expresar restricciones en bases de datos relacionales.</p></li>
+<li><p><strong>Verificación formal:</strong> LPPO se aplica en la verificación formal de hardware y software para demostrar propiedades y garantizar la corrección de sistemas.</p></li>
+<li><p><strong>Matemáticas:</strong> LPPO se utiliza en la formalización y demostración de teoremas matemáticos en áreas como álgebra, análisis y teoría de conjuntos.</p></li>
+<li><p><strong>Filosofía y lingüística:</strong> LPPO es relevante en la investigación filosófica y lingüística para el análisis formal de argumentos, la semántica formal y el estudio del significado de los enunciados.</p></li>
+<li><p><strong>Ingeniería del conocimiento:</strong> LPPO se emplea para representar el conocimiento y las reglas en sistemas expertos, facilitando el razonamiento lógico y la toma de decisiones.</p></li>
 </ol>
-<p><strong>Ejercicio de subconjunto:</strong></p>
-<ol type="1">
-<li>Genera un conjunto aleatorio de números pares del 2 al 10.</li>
-<li>Crea un segundo conjunto con los números del 1 al 10.</li>
-<li>Verifica si el primer conjunto es un subconjunto del segundo y muestra un mensaje adecuado en la salida.</li>
-</ol>
-<p><strong>Ejercicio de diferencia:</strong></p>
-<ol type="1">
-<li>Crea dos conjuntos aleatorios de letras minúsculas.</li>
-<li>Calcula la diferencia entre el primer conjunto y el segundo conjunto y muestra el resultado en la salida.</li>
-</ol>
-<p>En esta tarea, hemos utilizado diferentes operaciones de conjuntos como pertenencia, intersección, unión, subconjunto y diferencia. Cada ejercicio te permite practicar y comprender mejor estos conceptos clave en el manejo de conjuntos.</p>
+<p>En resumen, LPPO tiene aplicaciones amplias y variadas en áreas que requieren representación de conocimiento, razonamiento lógico y procesamiento de información estructurada.</p>
+</section>
+<section id="conclusiones." class="slide level2">
+<h2>Conclusiones.</h2>
+<p>En esta presentación, hemos explorado los conceptos fundamentales de la Lógica de Predicados del Primer Orden (LPPO). Hemos aprendido que LPPO es un sistema formal que permite expresar proposiciones más complejas que la lógica proposicional.</p>
+<p>Hemos visto los componentes de LPPO, como constantes, variables, funciones y predicados, que nos permiten especificar relaciones y propiedades en diversos dominios.</p>
+<p>También hemos abordado los cuantificadores existencial y universal, que nos permiten expresar cantidades y alcance de las proposiciones en LPPO.</p>
+<p>Además, hemos discutido la importancia de la inferencia y la validez en LPPO, así como el algoritmo de unificación, que es esencial para la resolución de problemas y la demostración de validez.</p>
+<p>Hemos presentado ejemplos paso a paso de implementaciones del algoritmo de unificación en lenguajes de programación como C++, Python y Java.</p>
+<p>Finalmente, hemos destacado algunas aplicaciones de LPPO en campos como inteligencia artificial, base de datos, verificación formal, matemáticas, filosofía y lingüística, e ingeniería del conocimiento.</p>
+<p>En conclusión, la Lógica de Predicados del Primer Orden es un poderoso formalismo que nos permite representar y razonar sobre conocimiento en diversos dominios. Su comprensión y aplicación tienen un impacto significativo en campos como la inteligencia artificial, la base de datos y la verificación formal, entre otros.</p>
+</section>
+<section id="referencias-bibliográficas." class="slide level2">
+<h2>Referencias Bibliográficas.</h2>
+<p>Enderton, H. B. (2001). A Mathematical Introduction to Logic. Academic Press.</p>
+<ul>
+<li>Este libro proporciona una introducción matemática rigurosa a la lógica matemática, incluyendo LPPO. Cubre temas desde los fundamentos hasta la teoría de modelos y la teoría de la computación.</li>
+</ul>
+<p>Gallier, J. H. (2015). Logic for Computer Science: Foundations of Automatic Theorem Proving. Dover Publications.</p>
+<ul>
+<li>Este libro se centra en la lógica matemática y su aplicación en ciencias de la computación. Contiene un capítulo dedicado a la LPPO y algoritmos de unificación.</li>
+</ul>
+<p>Huth, M., &amp; Ryan, M. (2004). Logic in Computer Science: Modelling and Reasoning about Systems. Cambridge University Press.</p>
+<ul>
+<li>Esta obra se enfoca en la aplicación de la lógica en la ciencia de la computación. Ofrece una introducción a la LPPO y aborda su aplicación en la verificación formal y el razonamiento lógico.</li>
+</ul>
+<p>Mendelson, E. (2009). Introduction to Mathematical Logic. CRC Press.</p>
+<ul>
+<li>Este libro proporciona una introducción detallada a la lógica matemática, incluyendo la LPPO y sus fundamentos. Cubre temas como la teoría de la prueba y la teoría de la recursión.</li>
+</ul>
+<p>Russell, S., &amp; Norvig, P. (2016). Artificial Intelligence: A Modern Approach. Pearson.</p>
+<ul>
+<li>Este libro de referencia en inteligencia artificial incluye un capítulo sobre lógica y razonamiento lógico, donde se discuten conceptos relacionados con la LPPO y su aplicación en sistemas inteligentes.</li>
+</ul>
 <p><img src="img/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://espe.edu.ec" class="uri">https://espe.edu.ec</a></p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
