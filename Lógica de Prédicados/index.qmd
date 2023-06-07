@@ -1,0 +1,331 @@
+---
+title: "Introducción a la Lógica de Predicados del Primer Orden (LPPO)"
+subtitle: "Introducción a la Lógica"
+date: "today"
+author: "Lcdo. Diego Medardo Saavedra García. Mgtr."
+lang: "es"
+format:
+  revealjs:
+    #chalkboard: 
+      #buttons: false
+    toc: true
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    logo: img/logo.png
+    footer: <https://espe.edu.ec>
+    theme: dark
+    makeindex: true
+    multiplex: true
+    transition: fade
+    chalkboard: true #Pizarra
+    auto-stretch: false
+    smaller: false
+    scrollable: true
+    #presentation-title-slide-text-alig: left
+    presentation-slide-text-align: center
+    menu: true
+    codeBlock: {data-trim: true}
+    execute: true
+    executeCode: true
+  #html: 
+    
+    #code-fold: true
+    #html-math-method: katex
+    #multiplex: true
+    #transition: fade
+    #auto-stretch: false
+bibliography: Bibliografia.bib
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl"
+editor_options: 
+  chunk_output_type: console
+---
+
+## Introducción.
+
+-   En esta presentación, exploraremos los conceptos fundamentales de la Lógica de Predicados del Primer Orden (LPPO), su importancia en la lógica y la programación, y cómo se aplica en diversos dominios.
+
+## ¿Qué es la Lógica de Predicados del Primer Orden?
+
+-   LPPO es un sistema formal que permite expresar proposiciones más complejas que la lógica proposicional.
+
+-   En LPPO, utilizamos cuantificadores (existencial y universal) y predicados para expresar relaciones y propiedades entre los elementos de un dominio.
+
+-   Proporciona un marco para la especificación precisa de relaciones y propiedades en diversos dominios.
+
+## Componentes de LPPO.
+
+-   En LPPO, trabajamos con varios componentes clave:
+
+    -   Constantes: Representan elementos específicos en un dominio. Por ejemplo, "Juan" podría ser una constante que representa a una persona llamada Juan.
+
+    -   Variables: Representan elementos genéricos en un dominio. Se utilizan para expresar proposiciones que son verdaderas para cualquier elemento del dominio.
+
+    -   Funciones: Mapean elementos de un dominio a otros elementos. Por ejemplo, una función "suma(x, y)" podría sumar dos números.
+
+    -   Predicados: Expresan propiedades o relaciones entre elementos del dominio. Por ejemplo, "esMayorDeEdad(x)" podría ser un predicado que verifica si una persona x es mayor de edad.
+
+## Sintaxis de LPPO.
+
+-   La sintaxis de LPPO define cómo se construyen las fórmulas válidas en el lenguaje.
+
+-   Incluye símbolos para constantes, variables, funciones, predicados, cuantificadores y conectores lógicos.
+
+-   Estas reglas sintácticas aseguran que las fórmulas estén bien formadas y puedan ser interpretadas correctamente.
+
+## Cuantificadores en LPPO.
+
+-   Los cuantificadores en LPPO son herramientas poderosas para expresar cuantidades y alcance de las proposiciones.
+
+-   El cuantificador existencial (∃) se usa para expresar que hay al menos un elemento en el dominio que satisface una propiedad.
+
+-   El cuantificador universal (∀) se usa para expresar que todos los elementos en el dominio satisfacen una propiedad.
+
+## Inferencia y Validez en LPPO.
+
+-   La inferencia es el proceso de razonamiento que nos permite obtener nuevas conclusiones a partir de premisas en LPPO.
+
+-   La validez se refiere a si una fórmula es verdadera en todos los posibles modelos.
+
+-   Estos conceptos son fundamentales para demostrar la corrección y coherencia de los razonamientos lógicos en LPPO.
+
+## Algoritmo de Unificación.
+
+-   El algoritmo de unificación es utilizado en LPPO para encontrar asignaciones de valores a variables que hacen que dos términos sean iguales.
+
+-   Es ampliamente utilizado en la resolución de problemas en LPPO y es esencial para la inferencia y la demostración de validez.
+
+## Ejemplo de Unificación en C++.
+
+``` cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+using namespace std;
+
+// Función de unificación
+bool unificar(string term1, string term2, unordered_map<string, string>& unificador) {
+    if (term1 == term2) {
+        return true;
+    }
+    else if (term1[0] == '?' && term2[0] != '?') {
+        unificador[term1] = term2;
+        return true;
+    }
+    else if (term1[0] != '?' && term2[0] == '?') {
+        unificador[term2] = term1;
+        return true;
+    }
+    return false;
+}
+
+int main() {
+    unordered_map<string, string> unificador;
+    string term1 = "x";
+    string term2 = "John";
+    
+    if (unificar(term1, term2, unificador)) {
+        cout << "Unificación exitosa!" << endl;
+        cout << "Valores asignados: " << endl;
+        for (auto it = unificador.begin(); it != unificador.end(); ++it) {
+            cout << it->first << " = " << it->second << endl;
+        }
+    }
+    else {
+        cout << "No se pudo unificar los términos." << endl;
+    }
+    
+    return 0;
+}
+```
+
+-   En este ejemplo, se define una función de unificación que toma dos términos y un mapa para almacenar las asignaciones de valores a las variables.
+
+-   La función verifica si los términos son iguales o si uno de ellos es una variable sin asignar.
+
+-   Si los términos pueden unificarse, se guarda la asignación en el mapa de unificador.
+
+-   Al ejecutar el programa, se muestra un mensaje de unificación exitosa y se imprimen los valores asignados.
+
+## Ejemplo de Unificación en Python.
+
+``` python
+def unificar(term1, term2, unificador):
+    if term1 == term2:
+        return True
+    elif term1[0] == '?' and term2[0] != '?':
+        unificador[term1] = term2
+        return True
+    elif term1[0] != '?' and term2[0] == '?':
+        unificador[term2] = term1
+        return True
+    return False
+
+unificador = {}
+term1 = "x"
+term2 = "John"
+
+if unificar(term1, term2, unificador):
+    print("Unificación exitosa!")
+    print("Valores asignados:")
+    for key, value in unificador.items():
+        print(key, "=", value)
+else:
+    print("No se pudo unificar los términos.")
+```
+
+-   En este ejemplo, se presenta una implementación del algoritmo de unificación en Python.
+
+-   La función `unificar` toma dos términos y un diccionario para almacenar las asignaciones de valores a las variables.
+
+-   Se verifica si los términos son iguales o si uno de ellos es una variable sin asignar.
+
+-   Si los términos pueden unificarse, se guarda la asignación en el diccionario de `unificador`.
+
+-   Al ejecutar el programa, se muestra un mensaje de unificación exitosa y se imprimen los valores asignados.
+
+## Ejemplo de Unificación en Java.
+
+``` java
+import java.util.HashMap;
+import java.util.Map;
+
+public class Unificacion {
+
+    public static boolean unificar(String term1, String term2, Map<String, String> unificador) {
+        if (term1.equals(term2)) {
+            return true;
+        } else if (term1.charAt(0) == '?' && term2.charAt(0) != '?') {
+            unificador.put(term1, term2);
+            return true;
+        } else if (term1.charAt(0) != '?' && term2.charAt(0) == '?') {
+            unificador.put(term2, term1);
+            return true;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Map<String, String> unificador = new HashMap<>();
+        String term1 = "x";
+        String term2 = "John";
+
+        if (unificar(term1, term2, unificador)) {
+            System.out.println("Unificación exitosa!");
+            System.out.println("Valores asignados:");
+            for (Map.Entry<String, String> entry : unificador.entrySet()) {
+                System.out.println(entry.getKey() + " = " + entry.getValue());
+            }
+        } else {
+            System.out.println("No se pudo unificar los términos.");
+        }
+    }
+}
+```
+
+-   En este ejemplo, se presenta una implementación del algoritmo de unificación en Java.
+
+-   La función `unificar` toma dos términos y un mapa para almacenar las asignaciones de valores a las variables.
+
+-   Se verifica si los términos son iguales o si uno de ellos es una variable sin asignar.
+
+-   Si los términos pueden unificarse, se guarda la asignación en el mapa de `unificador`.
+
+-   Al ejecutar el programa, se muestra un mensaje de unificación exitosa y se imprimen los valores asignados.
+
+## Resolución en LPPO.
+
+-   La resolución es un método de inferencia utilizado en LPPO para demostrar la validez de una fórmula o encontrar modelos que satisfacen una fórmula.
+
+-   Se basa en la idea de refutación, donde se busca una contradicción asumiendo que la fórmula a demostrar es falsa.
+
+-   La resolución se aplica mediante la aplicación de reglas de inferencia y la eliminación de cláusulas.
+
+-   Es un método general y completo para la demostración de teoremas en LPPO.
+
+## Ejemplo de Resolución en LPPO.
+
+Para ilustrar el proceso de resolución en LPPO, consideremos el siguiente ejemplo:
+
+**Premisas:**
+
+1.  Todos los perros ladran: ∀x (Perro(x) → Ladra(x))
+
+2.  Pluto es un perro: Perro(Pluto)
+
+**Objetivo:** Demostrar que Pluto ladra (Ladra(Pluto))
+
+Para resolver este problema, aplicamos el método de resolución de la siguiente manera:
+
+1.  **Convertir las premisas a forma normal clausal:** Premisa 1: ¬Perro(x) ∨ Ladra(x) Premisa 2: Perro(Pluto)
+
+2.  **Agregar la negación del objetivo como cláusula:** Cláusula objetivo: ¬Ladra(Pluto)
+
+3.  **Aplicar reglas de inferencia para obtener nuevas cláusulas:**
+
+    -   Unificar la cláusula objetivo con la premisa 1 usando la sustitución {x/Pluto}: Resultado: Ladra(Pluto)
+
+    -   Esta nueva cláusula se agrega al conjunto de cláusulas.
+
+4.  Repetir el paso anterior hasta que se obtenga una contradicción o no se puedan generar más cláusulas.
+
+En este ejemplo, el proceso de resolución conducirá a la obtención de la cláusula Ladra(Pluto), lo que demuestra que Pluto ladra.
+
+La resolución en LPPO es un método poderoso para demostrar la validez de fórmulas y resolver problemas lógicos en diferentes dominios.
+
+## Aplicaciones de LPPO.
+
+La Lógica de Predicados del Primer Orden (LPPO) tiene diversas aplicaciones en distintos campos, como:
+
+1.  **Inteligencia Artificial:** LPPO se utiliza para representar conocimiento en sistemas expertos, razonamiento automático, planificación y procesamiento del lenguaje natural.
+
+2.  **Base de datos:** LPPO es la base teórica de los lenguajes de consulta como SQL. Permite realizar consultas complejas y expresar restricciones en bases de datos relacionales.
+
+3.  **Verificación formal:** LPPO se aplica en la verificación formal de hardware y software para demostrar propiedades y garantizar la corrección de sistemas.
+
+4.  **Matemáticas:** LPPO se utiliza en la formalización y demostración de teoremas matemáticos en áreas como álgebra, análisis y teoría de conjuntos.
+
+5.  **Filosofía y lingüística:** LPPO es relevante en la investigación filosófica y lingüística para el análisis formal de argumentos, la semántica formal y el estudio del significado de los enunciados.
+
+6.  **Ingeniería del conocimiento:** LPPO se emplea para representar el conocimiento y las reglas en sistemas expertos, facilitando el razonamiento lógico y la toma de decisiones.
+
+En resumen, LPPO tiene aplicaciones amplias y variadas en áreas que requieren representación de conocimiento, razonamiento lógico y procesamiento de información estructurada.
+
+## Conclusiones.
+
+En esta presentación, hemos explorado los conceptos fundamentales de la Lógica de Predicados del Primer Orden (LPPO). Hemos aprendido que LPPO es un sistema formal que permite expresar proposiciones más complejas que la lógica proposicional.
+
+Hemos visto los componentes de LPPO, como constantes, variables, funciones y predicados, que nos permiten especificar relaciones y propiedades en diversos dominios.
+
+También hemos abordado los cuantificadores existencial y universal, que nos permiten expresar cantidades y alcance de las proposiciones en LPPO.
+
+Además, hemos discutido la importancia de la inferencia y la validez en LPPO, así como el algoritmo de unificación, que es esencial para la resolución de problemas y la demostración de validez.
+
+Hemos presentado ejemplos paso a paso de implementaciones del algoritmo de unificación en lenguajes de programación como C++, Python y Java.
+
+Finalmente, hemos destacado algunas aplicaciones de LPPO en campos como inteligencia artificial, base de datos, verificación formal, matemáticas, filosofía y lingüística, e ingeniería del conocimiento.
+
+En conclusión, la Lógica de Predicados del Primer Orden es un poderoso formalismo que nos permite representar y razonar sobre conocimiento en diversos dominios. Su comprensión y aplicación tienen un impacto significativo en campos como la inteligencia artificial, la base de datos y la verificación formal, entre otros.
+
+## Referencias Bibliográficas.
+
+Enderton, H. B. (2001). A Mathematical Introduction to Logic. Academic Press.
+
+-   Este libro proporciona una introducción matemática rigurosa a la lógica matemática, incluyendo LPPO. Cubre temas desde los fundamentos hasta la teoría de modelos y la teoría de la computación.
+
+Gallier, J. H. (2015). Logic for Computer Science: Foundations of Automatic Theorem Proving. Dover Publications.
+
+-   Este libro se centra en la lógica matemática y su aplicación en ciencias de la computación. Contiene un capítulo dedicado a la LPPO y algoritmos de unificación.
+
+Huth, M., & Ryan, M. (2004). Logic in Computer Science: Modelling and Reasoning about Systems. Cambridge University Press.
+
+-   Esta obra se enfoca en la aplicación de la lógica en la ciencia de la computación. Ofrece una introducción a la LPPO y aborda su aplicación en la verificación formal y el razonamiento lógico.
+
+Mendelson, E. (2009). Introduction to Mathematical Logic. CRC Press.
+
+-   Este libro proporciona una introducción detallada a la lógica matemática, incluyendo la LPPO y sus fundamentos. Cubre temas como la teoría de la prueba y la teoría de la recursión.
+
+Russell, S., & Norvig, P. (2016). Artificial Intelligence: A Modern Approach. Pearson.
+
+-   Este libro de referencia en inteligencia artificial incluye un capítulo sobre lógica y razonamiento lógico, donde se discuten conceptos relacionados con la LPPO y su aplicación en sistemas inteligentes.

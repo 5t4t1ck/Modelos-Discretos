@@ -1,0 +1,4 @@
+token = "52524273-F1ZXJPsTdvbmtGUFNXid8Q1YCirV9cd0sTOj2JtPD"
+token_secret = "4n0UnSrxyD64rtN9FrFCI2XC0J79KwLaqaJceMEqgoZl5"
+consumer_key="YXPXXvMftTe14E1owXdwbC1zg" 
+consumer_secret = "P26fs4mQXwVlqHmxxGPbmYevJnhUu4COPDU58WlioQE4oq7oTJ"
