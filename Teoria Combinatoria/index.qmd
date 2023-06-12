@@ -1,0 +1,132 @@
+---
+title: "Teoría combinatoria: permutaciones y combinaciones"
+subtitle: "Introducción a la Lógica"
+date: "today"
+author: "Lcdo. Diego Medardo Saavedra García. Mgtr."
+lang: "es"
+format:
+  revealjs:
+    #chalkboard: 
+      #buttons: false
+    toc: true
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    logo: img/logo.png
+    footer: <https://espe.edu.ec>
+    theme: dark
+    makeindex: true
+    multiplex: true
+    transition: fade
+    chalkboard: true #Pizarra
+    auto-stretch: false
+    smaller: false
+    scrollable: true
+    #presentation-title-slide-text-alig: left
+    presentation-slide-text-align: center
+    menu: true
+    codeBlock: {data-trim: true}
+    execute: true
+    executeCode: true
+  #html: 
+    
+    #code-fold: true
+    #html-math-method: katex
+    #multiplex: true
+    #transition: fade
+    #auto-stretch: false
+bibliography: Bibliografia.bib
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl"
+editor_options: 
+  chunk_output_type: console
+---
+
+## Teoría combinatoria: permutaciones y combinaciones
+
+### Introducción.
+
+¡Bienvenidos a esta presentación sobre la teoría combinatoria y su aplicación en permutaciones y combinaciones! En esta sesión, exploraremos los fascinantes conceptos de contar y calcular las formas en que se pueden combinar, organizar y seleccionar elementos de un conjunto finito.
+
+En esta presentación, abordaremos los siguientes temas:
+
+1.  Principios fundamentales de conteo.
+2.  Definición y Teorema de permutaciones y combinaciones.
+3.  Probabilidad discreta.
+
+### Objetivo
+
+El objetivo de esta presentación es proporcionar una comprensión clara y concisa de la teoría combinatoria, así como de las permutaciones y combinaciones, y mostrar su relevancia en diversas áreas de estudio, como las matemáticas, la estadística y la informática.
+
+La teoría combinatoria es una rama emocionante de las matemáticas que se enfoca en el estudio de las posibilidades y combinaciones de elementos en conjuntos finitos. Es una herramienta fundamental en diversos campos y nos permite resolver problemas relacionados con la organización, la selección y la probabilidad.
+
+¡Listos para sumergirnos en el mundo de la teoría combinatoria! A medida que avancemos en esta presentación, descubriremos los principios básicos de conteo, aprenderemos cómo calcular permutaciones y combinaciones, y exploraremos cómo se aplica la probabilidad discreta en situaciones reales.
+
+![](images/123-3747156821.jpg){fig-align="center"}
+
+¡Comencemos nuestro viaje en la teoría combinatoria y exploremos el emocionante mundo de las permutaciones y combinaciones!
+
+## 2.1 Principios fundamentales de conteo
+
+En esta sección, exploraremos los principios fundamentales de conteo, que son herramientas esenciales en la teoría combinatoria. Estos principios nos permiten contar de manera eficiente las posibilidades en situaciones de combinación y selección.
+
+1.  **Principio de la multiplicación:** Este principio establece que si una tarea se puede realizar en m etapas independientes, y para cada etapa hay n_i formas posibles de realizarla, entonces el número total de formas de realizar la tarea completa es el producto de n_i para cada etapa.
+
+### Ejemplo:
+
+Imagina que tienes una camisa con 3 colores disponibles (rojo, azul y verde) y 2 opciones de tamaño (pequeño y mediano). El número total de combinaciones posibles de color y tamaño de la camisa sería 3 \* 2 = 6.
+
+2.  **Principio de la suma:** Este principio establece que si una tarea se puede realizar de dos o más maneras diferentes, y no hay posibilidad de realizarlas simultáneamente, entonces el número total de formas de realizar la tarea es la suma de las diferentes formas.
+
+### Ejemplo:
+
+Supongamos que tienes 3 camisetas diferentes y 2 pantalones diferentes. Si quieres elegir un atuendo combinando una camiseta y un pantalón, el número total de combinaciones posibles sería 3 + 2 = 5.
+
+Estos principios son fundamentales para contar de manera sistemática y eficiente en situaciones donde hay múltiples opciones y restricciones. Nos proporcionan una base sólida para comprender y calcular las permutaciones y combinaciones en la teoría combinatoria.
+
+¡Avancemos a la siguiente diapositiva y exploremos las permutaciones y combinaciones en más detalle!
+
+## 2.1.2 Definición y Teorema de permutaciones y combinaciones
+
+En esta sección, profundizaremos en las permutaciones y combinaciones, dos conceptos esenciales en la teoría combinatoria. Estas técnicas nos permiten contar y calcular las diferentes formas en que se pueden organizar y seleccionar elementos de un conjunto finito.
+
+1.  **Permutaciones:** Las permutaciones se refieren al ordenamiento de elementos. En una permutación, se toman elementos de un conjunto y se los coloca en un orden específico. El número de permutaciones posibles depende del número de elementos disponibles y del tamaño del subconjunto que se está tomando en consideración.
+
+### Ejemplo:
+
+Supongamos que tienes 4 libros y deseas colocarlos en un estante. El número total de formas en que puedes organizar los libros en el estante se calcula utilizando la fórmula de las permutaciones, que es n! / (n - r)!, donde n es el número de elementos totales y r es el número de elementos seleccionados. En este caso, sería 4! / (4 - 4)! = 4!.
+
+2.  **Combinaciones:** Las combinaciones se enfocan en la selección de elementos sin tener en cuenta su orden. En una combinación, se selecciona un subconjunto de elementos de un conjunto más grande, sin importar el orden en que se seleccionen. El número de combinaciones posibles también depende del número de elementos disponibles y del tamaño del subconjunto que se está tomando en consideración.
+
+### Ejemplo:
+
+Supongamos que tienes 6 personas y deseas formar un equipo de 3 personas. El número total de combinaciones posibles se calcula utilizando la fórmula de las combinaciones, que es n! / (r! \* (n - r)!), donde n es el número de elementos totales y r es el número de elementos seleccionados. En este caso, sería 6! / (3! \* (6 - 3)!).
+
+Estos conceptos son fundamentales en la teoría combinatoria y nos brindan las herramientas necesarias para contar y calcular de manera precisa las posibilidades en una amplia gama de situaciones.
+
+## 2.1.3 Probabilidad discreta.
+
+En esta sección, exploraremos la probabilidad discreta y cómo se relaciona con la teoría combinatoria. La probabilidad discreta se aplica cuando el espacio muestral de un evento consiste en un conjunto finito o numerable de posibilidades.
+
+1.  **Concepto de probabilidad:** La probabilidad se refiere a la medida de la posibilidad de que ocurra un evento. En el contexto de la probabilidad discreta, utilizamos los conceptos de permutaciones y combinaciones para calcular las posibilidades de eventos específicos.
+
+2.  **Cálculo de la probabilidad:** Para calcular la probabilidad de un evento discreto, dividimos el número de casos favorables al evento por el número total de casos posibles. Aquí es donde entran en juego las permutaciones y combinaciones, ya que nos permiten determinar cuántos casos hay en el numerador y el denominador.
+
+**Ejemplo:** Supongamos que lanzamos un dado de seis caras y queremos calcular la probabilidad de obtener un número par. En este caso, podemos determinar el número de casos favorables (3, ya que hay tres números pares en un dado de seis caras) y el número total de casos posibles (6, ya que hay seis caras en total). La probabilidad sería 3/6 = 1/2.
+
+La probabilidad discreta y la teoría combinatoria están estrechamente relacionadas, ya que las permutaciones y combinaciones nos permiten calcular las posibilidades que son fundamentales para determinar la probabilidad de eventos específicos.
+
+Continuemos a la siguiente diapositiva y resumamos lo que hemos aprendido hasta ahora.
+
+## Conclusiones
+
+En esta presentación, hemos explorado los conceptos fundamentales de la teoría combinatoria, centrándonos en las permutaciones, las combinaciones y la probabilidad discreta. Aquí hay un resumen de los puntos clave que hemos cubierto:
+
+-   Los principios fundamentales de conteo, como el principio de la multiplicación y el principio de la suma, son herramientas esenciales en la teoría combinatoria para contar de manera sistemática y eficiente.
+
+-   Las permutaciones se refieren al ordenamiento de elementos, mientras que las combinaciones se enfocan en la selección de elementos sin tener en cuenta el orden.
+
+-   Las fórmulas de permutaciones y combinaciones nos permiten calcular el número total de formas posibles en diferentes situaciones.
+
+-   La probabilidad discreta se basa en la teoría combinatoria y utiliza las permutaciones y combinaciones para calcular la posibilidad de eventos específicos.
+
+-   El conocimiento de la teoría combinatoria es relevante en diversas áreas, como las matemáticas, la estadística, la informática y la toma de decisiones.
