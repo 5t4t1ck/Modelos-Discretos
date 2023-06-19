@@ -43,7 +43,9 @@ editor_options:
 
 ## Teoría combinatoria: permutaciones y combinaciones
 
-### Introducción.
+### Introducción.jlbouh;eszaa''
+
+.
 
 ¡Bienvenidos a esta presentación sobre la teoría combinatoria y su aplicación en permutaciones y combinaciones! En esta sesión, exploraremos los fascinantes conceptos de contar y calcular las formas en que se pueden combinar, organizar y seleccionar elementos de un conjunto finito.
 
