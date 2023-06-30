@@ -11,8 +11,8 @@
   <meta name="generator" content="quarto-1.3.340">
 
   <meta name="author" content="Lcdo. Diego Medardo Saavedra García. Mgtr.">
-  <meta name="dcterms.date" content="2023-06-12">
-  <title>Teoría combinatoria: permutaciones y combinaciones</title>
+  <meta name="dcterms.date" content="2023-06-30">
+  <title>Algoritmos</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -329,8 +329,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Teoría combinatoria: permutaciones y combinaciones</h1>
-  <p class="subtitle">Introducción a la Lógica</p>
+  <h1 class="title">Algoritmos</h1>
+  <p class="subtitle">Modelos Discretos</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -340,109 +340,65 @@ Lcdo. Diego Medardo Saavedra García. Mgtr.
 </div>
 </div>
 
-  <p class="date">2023-06-12</p>
+  <p class="date">2023-06-30</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Tabla de contenidos</h2>
 <ul>
-<li><a href="#/teoría-combinatoria-permutaciones-y-combinaciones" id="/toc-teoría-combinatoria-permutaciones-y-combinaciones">Teoría combinatoria: permutaciones y combinaciones</a>
+<li><a href="#/algoritmos" id="/toc-algoritmos">Algoritmos</a>
 <ul>
-<li><a href="#/teoría-combinatoria-permutaciones-y-combinaciones" id="/toc-introducción.">Introducción.</a></li>
-<li><a href="#/teoría-combinatoria-permutaciones-y-combinaciones" id="/toc-objetivo">Objetivo</a></li>
-</ul></li>
-<li><a href="#/principios-fundamentales-de-conteo" id="/toc-principios-fundamentales-de-conteo">2.1 Principios fundamentales de conteo</a>
+<li><a href="#/características-y-análisis-de-un-algoritmo" id="/toc-características-y-análisis-de-un-algoritmo">Características y Análisis de un algoritmo</a>
 <ul>
-<li><a href="#/principios-fundamentales-de-conteo" id="/toc-ejemplo">Ejemplo:</a></li>
-<li><a href="#/principios-fundamentales-de-conteo" id="/toc-ejemplo-1">Ejemplo:</a></li>
+<li><a href="#/características-y-análisis-de-un-algoritmo" id="/toc-introducción">Introducción:</a></li>
+<li><a href="#/características-y-análisis-de-un-algoritmo" id="/toc-características-de-un-algoritmo">Características de un algoritmo:</a></li>
+<li><a href="#/características-y-análisis-de-un-algoritmo" id="/toc-análisis-de-un-algoritmo">Análisis de un algoritmo:</a></li>
 </ul></li>
-<li><a href="#/definición-y-teorema-de-permutaciones-y-combinaciones" id="/toc-definición-y-teorema-de-permutaciones-y-combinaciones">2.1.2 Definición y Teorema de permutaciones y combinaciones</a>
+<li><a href="#/ejecución-de-algoritmos" id="/toc-ejecución-de-algoritmos">Ejecución de algoritmos</a></li>
+<li><a href="#/introducción-1" id="/toc-introducción-1">Introducción:</a>
 <ul>
-<li><a href="#/definición-y-teorema-de-permutaciones-y-combinaciones" id="/toc-ejemplo-2">Ejemplo:</a></li>
-<li><a href="#/definición-y-teorema-de-permutaciones-y-combinaciones" id="/toc-ejemplo-3">Ejemplo:</a></li>
+<li><a href="#/introducción-1" id="/toc-implementación-de-algoritmos">Implementación de algoritmos:</a></li>
 </ul></li>
-<li><a href="#/probabilidad-discreta." id="/toc-probabilidad-discreta.">2.1.3 Probabilidad discreta.</a></li>
-<li><a href="#/conclusiones" id="/toc-conclusiones">Conclusiones</a></li>
+</ul></li>
 </ul>
 </nav>
 </section>
-<section id="teoría-combinatoria-permutaciones-y-combinaciones" class="slide level2">
-<h2>Teoría combinatoria: permutaciones y combinaciones</h2>
-<h3 id="introducción.">Introducción.</h3>
-<p>¡Bienvenidos a esta presentación sobre la teoría combinatoria y su aplicación en permutaciones y combinaciones! En esta sesión, exploraremos los fascinantes conceptos de contar y calcular las formas en que se pueden combinar, organizar y seleccionar elementos de un conjunto finito.</p>
-<p>En esta presentación, abordaremos los siguientes temas:</p>
-<ol type="1">
-<li>Principios fundamentales de conteo.</li>
-<li>Definición y Teorema de permutaciones y combinaciones.</li>
-<li>Probabilidad discreta.</li>
-</ol>
-<h3 id="objetivo">Objetivo</h3>
-<p>El objetivo de esta presentación es proporcionar una comprensión clara y concisa de la teoría combinatoria, así como de las permutaciones y combinaciones, y mostrar su relevancia en diversas áreas de estudio, como las matemáticas, la estadística y la informática.</p>
-<p>La teoría combinatoria es una rama emocionante de las matemáticas que se enfoca en el estudio de las posibilidades y combinaciones de elementos en conjuntos finitos. Es una herramienta fundamental en diversos campos y nos permite resolver problemas relacionados con la organización, la selección y la probabilidad.</p>
-<p>¡Listos para sumergirnos en el mundo de la teoría combinatoria! A medida que avancemos en esta presentación, descubriremos los principios básicos de conteo, aprenderemos cómo calcular permutaciones y combinaciones, y exploraremos cómo se aplica la probabilidad discreta en situaciones reales.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/123-3747156821.jpg"></p>
-</figure>
-</div>
-<p>¡Comencemos nuestro viaje en la teoría combinatoria y exploremos el emocionante mundo de las permutaciones y combinaciones!</p>
+<section>
+<section id="algoritmos" class="title-slide slide level1 center">
+<h1>Algoritmos</h1>
+
 </section>
-<section id="principios-fundamentales-de-conteo" class="slide level2">
-<h2>2.1 Principios fundamentales de conteo</h2>
-<p>En esta sección, exploraremos los principios fundamentales de conteo, que son herramientas esenciales en la teoría combinatoria. Estos principios nos permiten contar de manera eficiente las posibilidades en situaciones de combinación y selección.</p>
-<ol type="1">
-<li><strong>Principio de la multiplicación:</strong> Este principio establece que si una tarea se puede realizar en m etapas independientes, y para cada etapa hay n_i formas posibles de realizarla, entonces el número total de formas de realizar la tarea completa es el producto de n_i para cada etapa.</li>
-</ol>
-<h3 id="ejemplo">Ejemplo:</h3>
-<p>Imagina que tienes una camisa con 3 colores disponibles (rojo, azul y verde) y 2 opciones de tamaño (pequeño y mediano). El número total de combinaciones posibles de color y tamaño de la camisa sería 3 * 2 = 6.</p>
-<ol start="2" type="1">
-<li><strong>Principio de la suma:</strong> Este principio establece que si una tarea se puede realizar de dos o más maneras diferentes, y no hay posibilidad de realizarlas simultáneamente, entonces el número total de formas de realizar la tarea es la suma de las diferentes formas.</li>
-</ol>
-<h3 id="ejemplo-1">Ejemplo:</h3>
-<p>Supongamos que tienes 3 camisetas diferentes y 2 pantalones diferentes. Si quieres elegir un atuendo combinando una camiseta y un pantalón, el número total de combinaciones posibles sería 3 + 2 = 5.</p>
-<p>Estos principios son fundamentales para contar de manera sistemática y eficiente en situaciones donde hay múltiples opciones y restricciones. Nos proporcionan una base sólida para comprender y calcular las permutaciones y combinaciones en la teoría combinatoria.</p>
-<p>¡Avancemos a la siguiente diapositiva y exploremos las permutaciones y combinaciones en más detalle!</p>
+<section id="características-y-análisis-de-un-algoritmo" class="slide level2">
+<h2>Características y Análisis de un algoritmo</h2>
+<h3 id="introducción">Introducción:</h3>
+<p>En esta sección, exploraremos las características y el análisis de los algoritmos. Los algoritmos son secuencias de pasos definidos y ordenados que resuelven problemas o realizan tareas específicas. Comprender las características de un algoritmo y cómo analizar su eficiencia es fundamental para el diseño y la implementación de soluciones efectivas.</p>
+<h3 id="características-de-un-algoritmo">Características de un algoritmo:</h3>
+<p>Secuencia ordenada de pasos: Un algoritmo debe tener una secuencia bien definida de pasos que se siguen en un orden específico para lograr un objetivo.</p>
+<p><strong>Finitud:</strong> Un algoritmo debe finalizar en un número finito de pasos.</p>
+<p><strong>Precisión:</strong> Cada paso del algoritmo debe estar definido de manera precisa y sin ambigüedades.</p>
+<p><strong>Determinismo:</strong> Un algoritmo debe producir los mismos resultados para una entrada dada.</p>
+<p><strong>Eficiencia:</strong> Se busca que los algoritmos sean eficientes en términos de tiempo y recursos utilizados.</p>
+<h3 id="análisis-de-un-algoritmo">Análisis de un algoritmo:</h3>
+<p><strong>Eficiencia temporal:</strong> Se evalúa el tiempo de ejecución del algoritmo, generalmente en términos de la cantidad de operaciones realizadas.</p>
+<p><strong>Eficiencia espacial:</strong> Se analiza la cantidad de memoria o espacio requerido por el algoritmo para almacenar datos y variables.</p>
+<p><strong>Complejidad algorítmica:</strong> Se estudia cómo crece el tiempo de ejecución o el consumo de recursos a medida que aumenta el tamaño del problema.</p>
 </section>
-<section id="definición-y-teorema-de-permutaciones-y-combinaciones" class="slide level2">
-<h2>2.1.2 Definición y Teorema de permutaciones y combinaciones</h2>
-<p>En esta sección, profundizaremos en las permutaciones y combinaciones, dos conceptos esenciales en la teoría combinatoria. Estas técnicas nos permiten contar y calcular las diferentes formas en que se pueden organizar y seleccionar elementos de un conjunto finito.</p>
-<ol type="1">
-<li><strong>Permutaciones:</strong> Las permutaciones se refieren al ordenamiento de elementos. En una permutación, se toman elementos de un conjunto y se los coloca en un orden específico. El número de permutaciones posibles depende del número de elementos disponibles y del tamaño del subconjunto que se está tomando en consideración.</li>
-</ol>
-<h3 id="ejemplo-2">Ejemplo:</h3>
-<p>Supongamos que tienes 4 libros y deseas colocarlos en un estante. El número total de formas en que puedes organizar los libros en el estante se calcula utilizando la fórmula de las permutaciones, que es n! / (n - r)!, donde n es el número de elementos totales y r es el número de elementos seleccionados. En este caso, sería 4! / (4 - 4)! = 4!.</p>
-<ol start="2" type="1">
-<li><strong>Combinaciones:</strong> Las combinaciones se enfocan en la selección de elementos sin tener en cuenta su orden. En una combinación, se selecciona un subconjunto de elementos de un conjunto más grande, sin importar el orden en que se seleccionen. El número de combinaciones posibles también depende del número de elementos disponibles y del tamaño del subconjunto que se está tomando en consideración.</li>
-</ol>
-<h3 id="ejemplo-3">Ejemplo:</h3>
-<p>Supongamos que tienes 6 personas y deseas formar un equipo de 3 personas. El número total de combinaciones posibles se calcula utilizando la fórmula de las combinaciones, que es n! / (r! * (n - r)!), donde n es el número de elementos totales y r es el número de elementos seleccionados. En este caso, sería 6! / (3! * (6 - 3)!).</p>
-<p>Estos conceptos son fundamentales en la teoría combinatoria y nos brindan las herramientas necesarias para contar y calcular de manera precisa las posibilidades en una amplia gama de situaciones.</p>
+<section id="ejecución-de-algoritmos" class="slide level2">
+<h2>Ejecución de algoritmos</h2>
 </section>
-<section id="probabilidad-discreta." class="slide level2">
-<h2>2.1.3 Probabilidad discreta.</h2>
-<p>En esta sección, exploraremos la probabilidad discreta y cómo se relaciona con la teoría combinatoria. La probabilidad discreta se aplica cuando el espacio muestral de un evento consiste en un conjunto finito o numerable de posibilidades.</p>
-<ol type="1">
-<li><p><strong>Concepto de probabilidad:</strong> La probabilidad se refiere a la medida de la posibilidad de que ocurra un evento. En el contexto de la probabilidad discreta, utilizamos los conceptos de permutaciones y combinaciones para calcular las posibilidades de eventos específicos.</p></li>
-<li><p><strong>Cálculo de la probabilidad:</strong> Para calcular la probabilidad de un evento discreto, dividimos el número de casos favorables al evento por el número total de casos posibles. Aquí es donde entran en juego las permutaciones y combinaciones, ya que nos permiten determinar cuántos casos hay en el numerador y el denominador.</p></li>
-</ol>
-<p><strong>Ejemplo:</strong> Supongamos que lanzamos un dado de seis caras y queremos calcular la probabilidad de obtener un número par. En este caso, podemos determinar el número de casos favorables (3, ya que hay tres números pares en un dado de seis caras) y el número total de casos posibles (6, ya que hay seis caras en total). La probabilidad sería 3/6 = 1/2.</p>
-<p>La probabilidad discreta y la teoría combinatoria están estrechamente relacionadas, ya que las permutaciones y combinaciones nos permiten calcular las posibilidades que son fundamentales para determinar la probabilidad de eventos específicos.</p>
-<p>Continuemos a la siguiente diapositiva y resumamos lo que hemos aprendido hasta ahora.</p>
-</section>
-<section id="conclusiones" class="slide level2">
-<h2>Conclusiones</h2>
-<p>En esta presentación, hemos explorado los conceptos fundamentales de la teoría combinatoria, centrándonos en las permutaciones, las combinaciones y la probabilidad discreta. Aquí hay un resumen de los puntos clave que hemos cubierto:</p>
-<ul>
-<li><p>Los principios fundamentales de conteo, como el principio de la multiplicación y el principio de la suma, son herramientas esenciales en la teoría combinatoria para contar de manera sistemática y eficiente.</p></li>
-<li><p>Las permutaciones se refieren al ordenamiento de elementos, mientras que las combinaciones se enfocan en la selección de elementos sin tener en cuenta el orden.</p></li>
-<li><p>Las fórmulas de permutaciones y combinaciones nos permiten calcular el número total de formas posibles en diferentes situaciones.</p></li>
-<li><p>La probabilidad discreta se basa en la teoría combinatoria y utiliza las permutaciones y combinaciones para calcular la posibilidad de eventos específicos.</p></li>
-<li><p>El conocimiento de la teoría combinatoria es relevante en diversas áreas, como las matemáticas, la estadística, la informática y la toma de decisiones.</p></li>
-</ul>
+<section id="introducción-1" class="slide level2">
+<h2>Introducción:</h2>
+<p>En esta sección, exploraremos la ejecución de algoritmos y cómo se implementan en diferentes lenguajes de programación. Los algoritmos pueden ser implementados en diversos entornos y ejecutados en diferentes plataformas para resolver problemas específicos.</p>
+<h3 id="implementación-de-algoritmos">Implementación de algoritmos:</h3>
+<p><strong>Selección del lenguaje de programación:</strong> Seleccionar el lenguaje de programación más adecuado para la implementación del algoritmo, considerando factores como la eficiencia, la legibilidad del código y la disponibilidad de bibliotecas o frameworks.</p>
+<p><strong>Diseño del algoritmo:</strong> Traducir el algoritmo en un código de programación que siga la sintaxis y las convenciones del lenguaje elegido.</p>
+<p><strong>Depuración:</strong> Identificar y corregir errores en el código para garantizar que el algoritmo funcione correctamente.</p>
+<p><strong>Pruebas:</strong> Realizar pruebas exhaustivas para verificar que el algoritmo produzca los resultados esperados para diferentes casos de prueba.</p>
+<p><strong>Optimización:</strong> Identificar posibles mejoras en el algoritmo para lograr un rendimiento más eficiente.</p>
 <p><img src="img/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://espe.edu.ec" class="uri">https://espe.edu.ec</a></p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
