@@ -1,0 +1,88 @@
+---
+title: "Algoritmos"
+subtitle: "Modelos Discretos"
+date: "today"
+author: "Lcdo. Diego Medardo Saavedra García. Mgtr."
+lang: "es"
+format:
+  revealjs:
+    #chalkboard: 
+      #buttons: false
+    toc: true
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    logo: img/logo.png
+    footer: <https://espe.edu.ec>
+    theme: dark
+    makeindex: true
+    multiplex: true
+    transition: fade
+    chalkboard: true #Pizarra
+    auto-stretch: false
+    smaller: false
+    scrollable: true
+    #presentation-title-slide-text-alig: left
+    presentation-slide-text-align: center
+    menu: true
+    codeBlock: {data-trim: true}
+    execute: true
+    executeCode: true
+  #html: 
+    
+    #code-fold: true
+    #html-math-method: katex
+    #multiplex: true
+    #transition: fade
+    #auto-stretch: false
+bibliography: Bibliografia.bib
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl"
+editor_options: 
+  chunk_output_type: console
+---
+
+# Algoritmos
+
+## Características y Análisis de un algoritmo
+
+### Introducción:
+
+En esta sección, exploraremos las características y el análisis de los algoritmos. Los algoritmos son secuencias de pasos definidos y ordenados que resuelven problemas o realizan tareas específicas. Comprender las características de un algoritmo y cómo analizar su eficiencia es fundamental para el diseño y la implementación de soluciones efectivas.
+
+### Características de un algoritmo:
+
+Secuencia ordenada de pasos: Un algoritmo debe tener una secuencia bien definida de pasos que se siguen en un orden específico para lograr un objetivo.
+
+**Finitud:** Un algoritmo debe finalizar en un número finito de pasos.
+
+**Precisión:** Cada paso del algoritmo debe estar definido de manera precisa y sin ambigüedades.
+
+**Determinismo:** Un algoritmo debe producir los mismos resultados para una entrada dada.
+
+**Eficiencia:** Se busca que los algoritmos sean eficientes en términos de tiempo y recursos utilizados.
+
+### Análisis de un algoritmo:
+
+**Eficiencia temporal:** Se evalúa el tiempo de ejecución del algoritmo, generalmente en términos de la cantidad de operaciones realizadas.
+
+**Eficiencia espacial:** Se analiza la cantidad de memoria o espacio requerido por el algoritmo para almacenar datos y variables.
+
+**Complejidad algorítmica:** Se estudia cómo crece el tiempo de ejecución o el consumo de recursos a medida que aumenta el tamaño del problema.
+
+## Ejecución de algoritmos
+
+## Introducción:
+
+En esta sección, exploraremos la ejecución de algoritmos y cómo se implementan en diferentes lenguajes de programación. Los algoritmos pueden ser implementados en diversos entornos y ejecutados en diferentes plataformas para resolver problemas específicos.
+
+### Implementación de algoritmos:
+
+**Selección del lenguaje de programación:** Seleccionar el lenguaje de programación más adecuado para la implementación del algoritmo, considerando factores como la eficiencia, la legibilidad del código y la disponibilidad de bibliotecas o frameworks.
+
+**Diseño del algoritmo:** Traducir el algoritmo en un código de programación que siga la sintaxis y las convenciones del lenguaje elegido.
+
+**Depuración:** Identificar y corregir errores en el código para garantizar que el algoritmo funcione correctamente.
+
+**Pruebas:** Realizar pruebas exhaustivas para verificar que el algoritmo produzca los resultados esperados para diferentes casos de prueba.
+
+**Optimización:** Identificar posibles mejoras en el algoritmo para lograr un rendimiento más eficiente.
